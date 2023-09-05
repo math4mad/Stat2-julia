@@ -305,21 +305,4 @@ end
 
 get_df_feature(df::AbstractDataFrame)=show(names(data))
 
-"""
-Makes the walker walk for T timesteps
-   
-ref: [random-walk](https://kb.katnoria.com/posts/2020/8/random-walk/)
-# Arguments
-- `w::Walker1D`: one-dimensional walker
-- `T:Int64`: Number of timesteps in the walk
-"""
-function walk(w, T)
-    trajectory = [w]
-    for i ∈ 1:T
-        w = move(w)
-        push!(trajectory, deepcopy(w))
-    end
-    return trajectory
-end
-
 marker_style=(marker=:circle,markersize=12,color=(:green,0.2),strokewidth=1,strokecolor=:black)

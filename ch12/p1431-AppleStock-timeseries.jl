@@ -12,7 +12,7 @@ Random.seed!(34343)
 #2. plot timeseries,randon walk
     d=Normal(0,1.5)
     randomwalks=[cumsum([100,rand(d,65)...];dims=1) for i in 1:3]
-    series4=[data[:,:Price],randomwalks...]
+    series4=[data[:,:Price],randomwalks...] #一行真实数据, 三行随机行走数据
     """
     plot_series()
     apple stock series+ 3 random walk  series from 100, 
@@ -30,7 +30,7 @@ Random.seed!(34343)
          end
         fig
     end
-    fig=plot_series();save("./ch12/imgs/p1431-stock-randomwalk.png",fig)
+    #fig=plot_series();save("./ch12/imgs/p1431-stock-randomwalk.png",fig)
      
 #3. plor difference
     function plot_difference()

@@ -1,15 +1,16 @@
 #init  
 include("utils.jl")
-using  RCall
-using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
-using  StatsBase,TableTransforms
-using  GLM,AnovaGLM,HypothesisTests
+        using  RCall
+        using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+        using  StatsBase,TableTransforms
+        using  GLM,AnovaGLM,HypothesisTests
 
 
 #1. load data
         desc=Stat2Table(1421,"PeaceBridge2003","longer seasonal time series",["Year", "Month", "Traffic", "t"])
         data=@pipe load_rda(desc.name)
         ts=tspan=data[:,:t]
+        traffic=data[:,:Traffic]
 
 #2. plot time series
         fig1,ax1,plt1=scatterlines(data[:,:t],data[:,:Traffic];marker_style...,linewidth=4)
@@ -71,4 +72,40 @@ using  GLM,AnovaGLM,HypothesisTests
         end
         #fig=plot_pair_resid()#;save("p1421-two-models-residuals.png",fig)
         
+#6.    report  R² and  SE
+
+        yhat1=predict(mds[1],select(data,:t))
+        yhat2=predict(mds[2],select(data,[:Month,:t]))
+
+        se1=rmsd(data[:,:Traffic],Float64.(yhat1))
+        se2=rmsd(data[:,:Traffic],Float64.(yhat2))
+        r21=r2(mds[1])
+        r22=r2(mds[2])
+        c1=["Linear Model","Linear+Season Means"]
+        c2=[r21,r22].|>(d->round(d,digits=2)).|>d->"$(100*d)%"
+        c3=[se1,se2]
+        report_table=DataFrame(Model=c1,R²=c2,SE=c3)
+        #@pt  report_table
+        #= 
+                ┌─────────────────────┬────────┬─────────┐
+                │               Model │     R² │      SE │
+                │              String │ String │ Float64 │
+                ├─────────────────────┼────────┼─────────┤
+                │        Linear Model │  81.0% │  44.427 │
+                │ Linear+Season Means │  95.0% │  22.735 │
+                └─────────────────────┴────────┴─────────┘
+        =#
+#7.     lag-acf plot
+
+        data=traffic[1:end-1]
+        lag= traffic[2:end]
+        diff=data-lag
         
+        acf=autocor(diff)  # diff  autocor
+        function plot_acf()
+                fig=Figure()
+                ax=Axis(fig[1,1];xlabel="Lag",ylabel="ACF",title="Price Lag ACF")
+                stem!(ax,acf[2:end])
+                fig
+        end
+        fig= plot_acf()
