@@ -15,7 +15,7 @@
         fig1,ax1,plt1=scatterlines(data[:,:t],data[:,:Traffic];marker_style...,linewidth=4)
         #save("./ch12/imgs/p1412-seasonal-timeseries.png",fig)
 
-#3.    cos,sin  tranformtion  for  fitting
+##  3.    cos,sin  tranformtion  for  fitting
        cost(t)=cos(2pi*t/12); sint(t)=sin(2pi*t/12)
        model1=lm(@formula(Traffic~cost(t)+sint(t)), data)
        #= 
@@ -31,7 +31,7 @@
             ────────────────────────────────────────────────────────────────────────
        =#
 
-#4.    model1 ftest   
+## 4.    model1 ftest   
        ftest(model1.model)
        #F-statistic: 67.53 on 48 observations and 2 degrees of freedom, p-value: <1e-13 
 

@@ -8,6 +8,7 @@ include("utils.jl")
 #1.   load data
     desc=Stat2Table(1406,"SeaIce","sea ice  time series",["Year", "Extent", "Area", "t"])
     data=@pipe load_rda(desc.name)
+    display(first(data,10))
 
 #2.   plot  time-extend series
    
@@ -89,4 +90,7 @@ include("utils.jl")
             lines!(ax4,data[:,:t],yhat4)
             ax4.title="time-seaice-quad-reg"
             #fig4 ;save("t-scale-extent-quadreg.png",fig4)
+        
+            #anova(model2)
+
         
