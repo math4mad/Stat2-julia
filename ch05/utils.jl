@@ -334,3 +334,31 @@ function plot_dot_boxplot(gdf::GroupedDataFrame,cats,colors::Vector{Symbol},feat
      end
      fig
    end
+
+
+   """
+    plot_residuals_boxplot_qq(gdf::GroupedDataFrame,resid::Vector{Float64},cats::Vector{String},colors::Vector{Symbol},feature::String)
+    
+    anova 残差 boxplot, qqnorm 
+TBW
+"""
+function plot_residuals_boxplot_qq(gdf::GroupedDataFrame,resid::Vector{Float64},cats::Vector{String},colors::Vector{Symbol},feature::String)
+        
+    len=length(cats)
+    fig=Figure(resolution=(900,400))
+    ax1=Axis(fig[1,1];xticks=(1:len,cats))
+    ax2=Axis(fig[1,2];xticks=(1:len,cats))
+    Box(fig[1,1];color = (:orange,0.1),strokewidth=0.3)
+    Box(fig[1,2];color = (:orange,0.1),strokewidth=0.3)
+    ax=[ax1,ax2]
+    for (idx,df) in enumerate(gdf)
+         obs=size(df,1)  # 每组的观察数
+         xs=fill(idx,obs) #填充 xs
+         boxplot!(ax[1],xs,df[:,feature]
+         ;marker=:circle,markersize=14,color=(colors[idx],0.6),strokewidth=1,strokecolor=:black
+         )
+         
+    end
+    qqnorm!(ax2,resid;qqline = :fitrobust)
+    fig
+  end

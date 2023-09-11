@@ -10,6 +10,19 @@ function load_rda(str::AbstractString)
  return df["$str"]
 end
 
+"""
+    load_data(str::String)
+    读取 csv|>df|>dropmissing
+
+"""
+function load_data(str::String)
+        fetch(str) = str |> d -> CSV.File("./Stat2Data/$str.csv") |> DataFrame |> dropmissing
+        #to_ScienceType(d)=coerce(d,:Condition=>Multiclass)
+        df = fetch(str)
+        return df
+end
+
+
 "构建 Stat2  Struct"
 Base.@kwdef struct  Stat2Table
     page::Int
@@ -322,5 +335,31 @@ function walk(w, T)
     return trajectory
 end
 
-marker_style=(marker=:circle,markersize=12,color=(:green,0.2),strokewidth=1,strokecolor=:black)
 
+"Makie 文档 的 Theme"
+ggplot_theme = Theme(
+    Axis = (
+        backgroundcolor = :gray90,
+        leftspinevisible = false,
+        rightspinevisible = false,
+        bottomspinevisible = false,
+        topspinevisible = false,
+        xgridcolor = :white,
+        ygridcolor = :white,
+    )
+)
+
+
+"""
+    plot_diff(data::AbstractDataFrame)
+    绘制 timeseeis 差分图
+TBW
+"""
+function plot_diff(data::AbstractDataFrame)
+    fig=Figure()
+    ax=Axis(fig[1,1])
+    stem!(ax,eachcol(data)...)
+    fig
+end
+
+marker_style=(marker=:circle,markersize=12,color=(:green,0.2),strokewidth=1,strokecolor=:black)

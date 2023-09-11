@@ -89,7 +89,7 @@ include("utils.jl")
             yhat4=predict(model3,xs4)|>arr->round.(arr,digits=3)
             lines!(ax4,data[:,:t],yhat4)
             ax4.title="time-seaice-quad-reg"
-            #fig4 ;save("t-scale-extent-quadreg.png",fig4)
+            fig4 #;save("t-scale-extent-quadreg.png",fig4)
         
             #anova(model2)
 
