@@ -10,7 +10,7 @@ using  GLM,AnovaGLM,HypothesisTests
     gdf=groupby(data,:Env)
 
 # 2. onw-way anova 
-   OneWayANOVATest(gdf[1][:,:Rate],gdf[2][:,:Rate])
+   OneWayANOVATest(gdf[1].Rate,gdf[2].Rate)
    #= 
      outcome with 95% confidence: fail to reject h_0
      p-value:                     0.7037

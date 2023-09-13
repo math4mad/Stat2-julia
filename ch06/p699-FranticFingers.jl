@@ -67,6 +67,15 @@ using  GLM,AnovaGLM,HypothesisTests
     =#
 
     data_matrix
+    pretty_table(data_matrix;tf=tf_matrix,show_header = false)
+    #= 
+        ┌            ┐
+        │ 11  26  20 │
+        │ 56  83  71 │
+        │ 15  34  41 │
+        │  6  13  32 │
+        └            ┘
+    =#
 
     ave_matrix=@pipe data[:,:Rate]|>mean|>fill(_,12)|>reshape(_,(4,3))|>Int64.(_)
     pretty_table(ave_matrix;tf=tf_matrix,show_header = false)
@@ -91,9 +100,16 @@ using  GLM,AnovaGLM,HypothesisTests
     # estimated effects
      #data2=make_widedata(res)
      #@transform(data2, :Effect =:Ave.-34.0)
+
+# 5. drug effect
+
      
 
-# 5. two-way anova 
+
+  """
+  怎么想到用 anovabase 做two-way anova ?
+  """
+# 6. two-way anova 
      anova_lm(@formula(Rate~Drug +Subj),data)
     #= 
         Rate ~ 1 + Drug + Subj
@@ -111,3 +127,4 @@ using  GLM,AnovaGLM,HypothesisTests
      
 
 
+   
