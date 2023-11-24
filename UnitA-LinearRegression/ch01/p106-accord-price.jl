@@ -1,7 +1,6 @@
 
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
-using GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(105,"AccordPrice","describe table",["Age","Price","Mileage"])
 df=load_rda(desc.name)
@@ -35,7 +34,7 @@ function plot_boxplot()
     ax.title="accord-mileage-price"
     ax.xticks =(1:3,["15","52","88"])
     for (idx,df) in enumerate(gdf)
-        row,col=size(df)
+        row=size(df,1)
         boxplot!(ax, fill(idx,row),gdf[idx][:,"Price"];)
 
     end
@@ -118,6 +117,8 @@ function plot_density(model)
     fig,_,_=density(res,color=(:lightblue,0.5))
     #save("accord-price-linreg-residuals-density.png",fig)
 end
+
+
 
 
 

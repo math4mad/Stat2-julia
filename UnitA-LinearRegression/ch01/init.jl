@@ -1,4 +1,4 @@
-include("utils.jl")
+include("../utils.jl")
 using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
 using GLM,AnovaGLM
 

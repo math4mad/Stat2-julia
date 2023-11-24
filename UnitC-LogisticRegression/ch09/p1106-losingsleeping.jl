@@ -84,4 +84,5 @@ function augment_freqtable(data::AbstractDataFrame,feature::Vector,colnames)
         return  summary_df
     end
 
-augment_freqtable(data,["Outcome","Age"],colnames)
+sdf=augment_freqtable(data,["Outcome","Age"],colnames)
+@pt  sdf

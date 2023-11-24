@@ -1,6 +1,3 @@
-
-
-
 include("utils.jl")
 using  RCall
 using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
@@ -9,7 +6,7 @@ using  GLM,AnovaGLM,HypothesisTests
 
 # 1. load data
 
-    desc=Stat2Table(1106,"MedGPA","children sleep status",["Accept","Acceptance","GPA","MCAT"])
+    desc=Stat2Table(1106,"MedGPA","MedSchool acceptance",["Accept","Acceptance","GPA","MCAT"])
     data=@pipe load_rda(desc.name)|>select(_,desc.feature)
 
 # 2. lm and logistic  reg
@@ -37,15 +34,8 @@ using  GLM,AnovaGLM,HypothesisTests
     fig=Figure(resolution=(900,400))
     ax1=Axis(fig[1,1],xlabel="GPA",ylabel="MCAT")
     ax2=Axis(fig[1,2],xlabel="GPA",ylabel="P(Accept)")
-    scatter!(ax1, data[:,:GPA],data[:,:MCAT])
     lines!(ax1,xtest[:,:GPA],yhat1;color=:orange)
-    scatter!(ax2,data[:,:GPA],data[:,:Acceptance])
     lines!(ax2,xtest[:,:GPA],yhat2;color=:orange)
     fig
    end
-   #fig=plot_models()#;save("./ch09/imgs/p1114-medgpa-lm-logistics-reg.png",fig)
-
-
-
-
-    
+   fig=plot_models()
