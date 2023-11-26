@@ -6,10 +6,8 @@
 4. plot  residals and  qqplot
 """
 
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables
-using  StatsBase
-using  GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(293,"NFLStandings2016","defense offense  which is important ",["PointsFor","PointsAgainst","WinPct"])
 data=@pipe load_rda(desc.name)|>select(_,desc.feature)

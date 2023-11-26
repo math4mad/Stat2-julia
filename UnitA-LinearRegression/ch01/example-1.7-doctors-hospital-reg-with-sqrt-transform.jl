@@ -1,6 +1,5 @@
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
-using GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(138,"CountyHealth","doctors-hospital-relation",["County","MDs","Hospitals","Beds"])
 df=load_rda(desc.name)

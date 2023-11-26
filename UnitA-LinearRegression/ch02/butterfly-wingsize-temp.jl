@@ -1,6 +1,5 @@
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
-using GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(138,"ButterfliesBc","wings-tempature-reg",["Temp","Wing","Sex","Species" ])
 df=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])

@@ -1,6 +1,5 @@
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
-using GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(253,"Cereal","sugar-calories-reg",["Cereal","Calories","Sugar","Fiber"])
 data=@pipe load_rda(desc.name)|>select(_,"Calories","Sugar")

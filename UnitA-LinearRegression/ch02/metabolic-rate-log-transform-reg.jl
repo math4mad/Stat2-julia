@@ -1,7 +1,5 @@
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
-using  DataFrames
-using GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(256,"MetabolicRate","ch02/metabolic-rate-log-transform-reg",[:LogBodySize,:LogMrate])
 data=@pipe load_rda(desc.name)|>select(_,desc.feature)

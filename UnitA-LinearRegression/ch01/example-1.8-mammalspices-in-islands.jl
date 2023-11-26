@@ -2,9 +2,8 @@
  data  with log transform 
 """
 
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
-using GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(146,"SpeciesArea","number of spices related to islands area",["Area","Species","logArea","logSpecies"])
 df=@pipe load_rda(desc.name)
@@ -14,7 +13,7 @@ log_data=select(df,desc.feature[3:4])
 data1=select(df,["logArea","Species"])
 data2=select(df,["logArea","logSpecies"])
 
-#fig,ax=plot_pair_scatter(log_data;xlabel="logArea",ylabel="logSpecies");fig
+fig,ax=plot_pair_scatter(log_data;xlabel="logArea",ylabel="logSpecies");fig
 #save("mammalspices-in-islands-log-transform.png",fig)
 
 model1=lm(@formula(Species ~logArea), data1)
@@ -59,7 +58,7 @@ function plot_reg()
     fig
 end
 
-fig=plot_reg();save("islandarea-species-num-reg-with-logtransform.png",fig)
+fig=plot_reg()#;save("islandarea-species-num-reg-with-logtransform.png",fig)
 
 
 

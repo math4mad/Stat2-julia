@@ -5,11 +5,10 @@
 4. plot  residals and  qqplot
 """
 
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
-using  StatsBase
-using  GLM,AnovaGLM
+## 1. load package
+include("../../utils.jl")
 
+## 2. load data
 desc=Stat2Table(314,"Kids198","boy-girl-growth-rate",[:Age,:Weight,:Sex])
 data=@pipe load_rda(desc.name)|>select(_,desc.feature)
 gdf=groupby(data,:Sex)
@@ -31,7 +30,7 @@ labels=(xlabel="Age(month)",ylabel="Weight(pound)")
     绘制分 2组的回归拟合线
     ## Arguments
     1. gdf :GroupedDataFrame{DataFrame}
-    2. lms:  lm model array
+    2. lms:  lm model array :[model1,model2]
     3.  labels  eg (xlabel="Age(month)",ylabel="Weight(pound)")
     4.  colors  eg [:purple,:blue]
     

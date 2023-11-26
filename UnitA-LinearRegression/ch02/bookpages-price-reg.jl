@@ -1,6 +1,5 @@
-include("utils.jl")
-using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
-using GLM,AnovaGLM
+include("../../utils.jl")
+
 
 desc=Stat2Table(253,"TextPrices","pages-prices-reg",[:Pages,:Price])
 data=@pipe load_rda(desc.name)

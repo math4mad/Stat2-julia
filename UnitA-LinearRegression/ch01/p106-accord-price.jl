@@ -119,6 +119,9 @@ function plot_density(model)
 end
 
 
-
-
+let 
+    data=select(df,["Mileage","Price"])
+    fig=plot_linreg_residuals(model,data)
+    save("UnitA-LinearRegression/ch01/imgs/p106-accord-price.plot-linreg-residuals.png",fig)
+end
 
