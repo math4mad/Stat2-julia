@@ -17,3 +17,134 @@ body {
 main.content {
     max-width: 980px;
 }
+
+.home-hero {
+    margin: 0 -1rem 2.5rem;
+    padding: 2.5rem clamp(1.25rem, 5vw, 4rem) 2.75rem;
+    border-left: 7px solid #d75b35;
+    background: linear-gradient(120deg, #275f4b 0%, #34755d 68%, #d75b35 180%);
+    color: #fffdf7;
+    box-shadow: 12px 12px 0 #e2b27b;
+}
+
+.home-kicker,
+.method-number,
+.note-links span {
+    font: 700 .72rem/1.2 ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.home-kicker {
+    color: #f6c78b;
+    margin: 0 0 1.25rem;
+}
+
+.home-lede {
+    max-width: 700px;
+    margin: 0 0 1.75rem;
+    font-size: clamp(1.65rem, 4vw, 2.7rem);
+    line-height: 1.08;
+}
+
+.home-actions {
+    display: flex;
+    gap: .7rem;
+    flex-wrap: wrap;
+}
+
+.home-button {
+    display: inline-block;
+    padding: .7rem 1rem;
+    border: 1px solid #f7d4aa;
+    color: #fffdf7;
+    text-decoration: none;
+    font: 600 .84rem ui-sans-serif, system-ui, sans-serif;
+}
+
+.home-button:hover {
+    background: #fffdf7;
+    color: #275f4b;
+}
+
+.home-button-primary {
+    background: #d75b35;
+    border-color: #d75b35;
+}
+
+.method-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin: 2.5rem 0;
+    background: #cbd4ca;
+    border: 1px solid #cbd4ca;
+}
+
+.method-strip>div {
+    padding: 1rem 1.1rem;
+    background: #eef1e8;
+    color: #455248;
+    font: .88rem/1.5 ui-sans-serif, system-ui, sans-serif;
+}
+
+.method-strip strong {
+    color: #17211b;
+}
+
+.method-number {
+    display: block;
+    color: #d75b35;
+    margin-bottom: .45rem;
+}
+
+.note-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.25rem 0 2.75rem;
+}
+
+.note-links a {
+    display: flex;
+    min-height: 150px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.1rem;
+    border: 1px solid #d9ddd4;
+    background: #fffdf7;
+    color: #17211b;
+    text-decoration: none;
+}
+
+.note-links a:hover {
+    border-color: #d75b35;
+    transform: translateY(-3px);
+    transition: transform .18s ease;
+}
+
+.note-links span {
+    color: #893c27;
+}
+
+.note-links strong {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.note-links small {
+    color: #65736a;
+    font: .82rem ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (max-width: 700px) {
+    .home-hero {
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    .method-strip,
+    .note-links {
+        grid-template-columns: 1fr;
+    }
+}
