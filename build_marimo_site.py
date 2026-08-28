@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "marimo_exports" / "notes"
-SKIP = {"analyze.py", "parse_data.py", "migrate_julia_notes.py", "refresh_migration_notes.py", "stat2_python.py", "build_quarto_notes.py", "build_marimo_site.py"}
+SKIP = {"analyze.py", "parse_data.py", "migrate_julia_notes.py", "refresh_migration_notes.py", "stat2_python.py", "build_marimo_site.py"}
 
 
 def note_paths() -> list[Path]:
