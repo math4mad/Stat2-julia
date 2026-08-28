@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Stat2 Python Notes",
     "section": "",
-    "text": "STAT2 / PYTHON BRANCH / MARIMO NOTES\n\n\nA working archive of statistical ideas, carried from Julia into inspectable Python notebooks.\n\n\nBrowse the notebook libraryRead the migration guide\nThis site presents the migrated notes as static marimo HTML pages. The notebooks remain runnable locally with the lock5stat-env conda environment."
+    "text": "This site presents the migrated notes as static marimo HTML pages. The notebooks remain runnable locally with the lock5stat-env conda environment."
   },
   {
     "objectID": "index.html#start-with-a-question",
     "href": "index.html#start-with-a-question",
     "title": "Stat2 Python Notes",
     "section": "Start with a question",
-    "text": "Start with a question\n\nANOVARat fat experimentCompare high-protein diet sources LINEAR REGRESSIONBook pages and priceOpen a model close to the data TIME SERIESCPI and ARIMAInspect a seasonal workflow"
+    "text": "Start with a question\n\nBrowse the complete notebook library\nOpen the validated ANOVA note\nOpen a linear regression note\nOpen a time-series note"
   },
   {
     "objectID": "index.html#built-to-stay-close-to-the-data",
@@ -21,206 +21,10 @@
     "text": "Built to stay close to the data\nThe Python notes use Polars for tabular data, Great Tables for exploratory summaries, and SciPy or statsmodels for statistical models where the Julia analysis has been translated.\nSee the migration guide for coverage and environment details."
   },
   {
-    "objectID": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html",
-    "href": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html",
-    "title": "One-way Anova test workflow in julia",
-    "section": "",
-    "text": "dotplot, boxplot\n  ```julia\n   gdf=groupby(data,:Group)\n  ```\n\n\n\n```julia\n    sample=[gdf[idx][:,:Age] for (idx,cat) in enumerate(cats)]\n    OneWayANOVATest(sample...)\n```\n\n\n\n```julia\n LeveneTest(sample...)\n```\n\n\n\n   One-way analysis of variance (ANOVA) test\n    -----------------------------------------\n    Population details:\n        parameter of interest:   Means\n        value under h_0:         \"all equal\"\n        point estimate:          NaN\n\n    Test summary:\n        outcome with 95% confidence: fail to reject h_0\n        p-value:                     0.1039\n\n    Details:\n        number of observations: [6, 6, 6, 6]\n        F statistic:            2.34179\n        degrees of freedom:     (3, 20)\n  \n\n\n\n  h₀: 组间均值没有差异\n  hₐ: 组间均值有差异 \n\n\n\n  One-way ANOVA对均值进行检验,是否有差异, 但是并不能告诉我们到底哪些组之间有差异\n  所以需要进行后续实验 方法有 `TukeyHSD()`,实际就是组之间的配对 t检验的组合"
-  },
-  {
-    "objectID": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#exploring-data",
-    "href": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#exploring-data",
-    "title": "One-way Anova test workflow in julia",
-    "section": "",
-    "text": "dotplot, boxplot\n  ```julia\n   gdf=groupby(data,:Group)\n  ```"
-  },
-  {
-    "objectID": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#fitting-anova-model",
-    "href": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#fitting-anova-model",
-    "title": "One-way Anova test workflow in julia",
-    "section": "",
-    "text": "```julia\n    sample=[gdf[idx][:,:Age] for (idx,cat) in enumerate(cats)]\n    OneWayANOVATest(sample...)\n```"
-  },
-  {
-    "objectID": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#anova-是基于分析组之间的方差没有差异的前提-需要对方差齐性进行检验",
-    "href": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#anova-是基于分析组之间的方差没有差异的前提-需要对方差齐性进行检验",
-    "title": "One-way Anova test workflow in julia",
-    "section": "",
-    "text": "```julia\n LeveneTest(sample...)\n```"
-  },
-  {
-    "objectID": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#analysis-anova-table",
-    "href": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#analysis-anova-table",
-    "title": "One-way Anova test workflow in julia",
-    "section": "",
-    "text": "One-way analysis of variance (ANOVA) test\n    -----------------------------------------\n    Population details:\n        parameter of interest:   Means\n        value under h_0:         \"all equal\"\n        point estimate:          NaN\n\n    Test summary:\n        outcome with 95% confidence: fail to reject h_0\n        p-value:                     0.1039\n\n    Details:\n        number of observations: [6, 6, 6, 6]\n        F statistic:            2.34179\n        degrees of freedom:     (3, 20)"
-  },
-  {
-    "objectID": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#one-way-anova-检验的假设",
-    "href": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#one-way-anova-检验的假设",
-    "title": "One-way Anova test workflow in julia",
-    "section": "",
-    "text": "h₀: 组间均值没有差异\n  hₐ: 组间均值有差异"
-  },
-  {
-    "objectID": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#one-way-anova-的-ad-hoc-检验",
-    "href": "UnitB-Anova/ch05/One-way-ANOVA-test-procedure.html#one-way-anova-的-ad-hoc-检验",
-    "title": "One-way Anova test workflow in julia",
-    "section": "",
-    "text": "One-way ANOVA对均值进行检验,是否有差异, 但是并不能告诉我们到底哪些组之间有差异\n  所以需要进行后续实验 方法有 `TukeyHSD()`,实际就是组之间的配对 t检验的组合"
-  },
-  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "Notebook library",
     "section": "",
-    "text": "Rendered views of the migrated marimo notes. Each entry opens the notebook directly in the browser."
-  },
-  {
-    "objectID": "notes.html#root-utilities",
-    "href": "notes.html#root-utilities",
-    "title": "Notebook library",
-    "section": "Root utilities",
-    "text": "Root utilities\n\nParse Toml · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unita-linearregressionch01",
-    "href": "notes.html#unita-linearregressionch01",
-    "title": "Notebook library",
-    "section": "UnitA-LinearRegression/ch01",
-    "text": "UnitA-LinearRegression/ch01\n\nCapacitor Voltage · Python source\nEx 1.15 · Python source\nEx 1.16 · Python source\nEx 1.43 · Python source\nExample 1.7 Doctors Hospital Reg With Sqrt Transform · Python source\nExample 1.7 Doctors Hospital Reg · Python source\nExample 1.8 Mammalspices In Islands · Python source\nInit · Python source\nLog Circle Radius · Python source\nP106 Accord Price · Python source\nStudentized Longjump · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unita-linearregressionch02",
-    "href": "notes.html#unita-linearregressionch02",
-    "title": "Notebook library",
-    "section": "UnitA-LinearRegression/ch02",
-    "text": "UnitA-LinearRegression/ch02\n\nBookpages Price Reg · Python source\nBreakfast Cereal Caloric Reg · Python source\nButterfly Wingsize Temp · Python source\nInit · Python source\nMetabolic Rate Log Transform Reg · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unita-linearregressionch03",
-    "href": "notes.html#unita-linearregressionch03",
-    "title": "Notebook library",
-    "section": "UnitA-LinearRegression/ch03",
-    "text": "UnitA-LinearRegression/ch03\n\nInit · Python source\nP293 Nfl Offense Defense To Win · Python source\nP314 Boy Girl Growth Rate · Python source\nP325 Fish Nolinear Reg · Python source\nP337 Co2 Quadratic Reg · Python source\nP346 Max Trip Time · Python source\nP357 Houseny Detecting Multicollinearity · Python source\nP361 Hospital Meds Reg · Python source\nP380 Predicting Customer Spending · Python source\nP409 Study Brain Tissue Diff Gender · Python source\nP414 Handwriting Analysis · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unita-linearregressionch04",
-    "href": "notes.html#unita-linearregressionch04",
-    "title": "Notebook library",
-    "section": "UnitA-LinearRegression/ch04",
-    "text": "UnitA-LinearRegression/ch04\n\nInit · Python source\nP435 · Python source\nP442 Firstyear Gpa · Python source\nP485 Secondhand Car Onehot Encode · Python source\nP508 Accord Price Predict · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitb-anovach05",
-    "href": "notes.html#unitb-anovach05",
-    "title": "Notebook library",
-    "section": "UnitB-Anova/ch05",
-    "text": "UnitB-Anova/ch05\n\nInit · Python source\nP540 Rat Fat · Python source\nP545 Teenpregnancy · Python source\nP552 Exercise Improving Baby Walking 1 · Python source\nP552 Exercise Improving Baby Walking 2 · Python source\nP556 City Commmute Time Diff · Python source\nP579 Leaf Diet Liflong · Python source\nP583 Sexual Activity Affect Life Time · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitb-anovach06",
-    "href": "notes.html#unitb-anovach06",
-    "title": "Notebook library",
-    "section": "UnitB-Anova/ch06",
-    "text": "UnitB-Anova/ch06\n\nInit · Python source\nLong To Wide Table · Python source\nP690 Diff Env Affect Lung Clean Ability · Python source\nP693 Sleeping Shrews · Python source\nP699 Franticfingers · Python source\nRectangle · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitb-anovach07",
-    "href": "notes.html#unitb-anovach07",
-    "title": "Notebook library",
-    "section": "UnitB-Anova/ch07",
-    "text": "UnitB-Anova/ch07\n\nInit · Python source\nP778 Pig B12 · Python source\nP779 Hormone Affect Bird Calcium · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitb-anovach08",
-    "href": "notes.html#unitb-anovach08",
-    "title": "Notebook library",
-    "section": "UnitB-Anova/ch08",
-    "text": "UnitB-Anova/ch08\n\nInit · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitc-logisticregressionch09",
-    "href": "notes.html#unitc-logisticregressionch09",
-    "title": "Notebook library",
-    "section": "UnitC-LogisticRegression/ch09",
-    "text": "UnitC-LogisticRegression/ch09\n\nInit · Python source\nP1106 Losingsleeping 2 Using Tidier · Python source\nP1106 Losingsleeping · Python source\nP1106 Sleeptime Child · Python source\nP1111 Log Of Pi · Python source\nP1114 Medgpa · Python source\nP1116 Params Affect Shape · Python source\nP1118 Example9 10 · Python source\nP1122 Tms Treat Migraines · Python source\nP1122 Zapping Migraines · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitc-logisticregressionch10",
-    "href": "notes.html#unitc-logisticregressionch10",
-    "title": "Notebook library",
-    "section": "UnitC-LogisticRegression/ch10",
-    "text": "UnitC-LogisticRegression/ch10\n\nInit · Python source\nP1114 Medgpa · Python source\nP1201 Eye · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitc-logisticregressionch11",
-    "href": "notes.html#unitc-logisticregressionch11",
-    "title": "Notebook library",
-    "section": "UnitC-LogisticRegression/ch11",
-    "text": "UnitC-LogisticRegression/ch11\n\nInit · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitd-timeseries",
-    "href": "notes.html#unitd-timeseries",
-    "title": "Notebook library",
-    "section": "UnitD-Timeseries",
-    "text": "UnitD-Timeseries\n\nS&P Stock Timeseries · Python source"
-  },
-  {
-    "objectID": "notes.html#unitd-timeseriesch12",
-    "href": "notes.html#unitd-timeseriesch12",
-    "title": "Notebook library",
-    "section": "UnitD-Timeseries/ch12",
-    "text": "UnitD-Timeseries/ch12\n\nBeer Timeseries · Python source\nInit · Python source\nLocallevel Series · Python source\nMa Methods · Python source\nP1406 Seaice · Python source\nP1412 Seasonal Timeseries · Python source\nP1421 Peace Bridge Timeseries · Python source\nP1431 Applestock Timeseries · Python source\nP1440 Peace Bridge Difference · Python source\nP1446 Cpi Arima Model · Python source\nP1494 Google Stock Prices · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#unitd-timeseriesch12residualoil",
-    "href": "notes.html#unitd-timeseriesch12residualoil",
-    "title": "Notebook library",
-    "section": "UnitD-Timeseries/ch12/ResidualOil",
-    "text": "UnitD-Timeseries/ch12/ResidualOil\n\n1 Load Data · Python source\n2 Using Dar Model · Python source\n3 Open Stata Dataset · Python source\n4 Statspacemodel · Python source\n5 Statspacemodel Test · Python source\nUtils · Python source"
-  },
-  {
-    "objectID": "notes.html#ch00",
-    "href": "notes.html#ch00",
-    "title": "Notebook library",
-    "section": "ch00",
-    "text": "ch00\n\nWtloss4 · Python source"
-  },
-  {
-    "objectID": "notes.html#temp",
-    "href": "notes.html#temp",
-    "title": "Notebook library",
-    "section": "temp",
-    "text": "temp\n\nCombine Nrow · Python source\nFreqtable Test · Python source\nGet_Dataset · Python source\nLoad_Data_From_R · Python source\nMetidafreq Test · Python source\nTwo Way Table Demo 2 With R · Python source\nTwo Way Table Demo · Python source"
-  },
-  {
-    "objectID": "MIGRATION.html",
-    "href": "MIGRATION.html",
-    "title": "Julia to Python migration",
-    "section": "",
-    "text": "The python branch contains a same-directory Python marimo note for every Julia source file from main. The Julia files are retained on main as the reference implementation, but are removed from this branch.\n\n\n\nstat2_python.py contains shared RDA loading, Polars conversion, Great Tables EDA, and grouping helpers.\nmigrate_julia_notes.py regenerates missing same-path .py notes from Julia source metadata.\nEvery generated note is a marimo app and records its original Julia path.\nExisting Julia changes were preserved on main; Julia files are intentionally deleted on this branch.\n\n\n\n\nThe source tree had 104 Julia files and now has 104 same-path Python note counterparts. Notes with an explicit Stat2Table declaration load the named .rda object from Stat2Data as a Polars DataFrame and display a head plus an EDA summary. Notes without an explicit dataset declaration are runnable migration placeholders that identify the remaining manual translation work.\nThe generator classifies explicit operations as linear regression, ANOVA, logistic/generalized linear model, time series/ARIMA, or EDA-only. Formula-bearing notes expose the Julia formula in the notebook so the Python statistical implementation can be reviewed against the source. The hand-translated UnitB-Anova/ch05/p540-rat-fat.py also includes the validated SciPy and statsmodels ANOVA result.\n\n\n\nUse the lock5stat-env conda environment. Required Python packages include marimo, polars, pyreadr, great-tables, scipy, and statsmodels.\nUseful checks:\nconda run -n lock5stat-env python -m py_compile &lt;note.py&gt;\nconda run -n lock5stat-env marimo check &lt;note.py&gt;\nJulia sources should only be removed from a migration branch after the corresponding Python note has been checked for data, formulas, plots, and numerical results. The original sources remain available on main."
-  },
-  {
-    "objectID": "MIGRATION.html#structure",
-    "href": "MIGRATION.html#structure",
-    "title": "Julia to Python migration",
-    "section": "",
-    "text": "stat2_python.py contains shared RDA loading, Polars conversion, Great Tables EDA, and grouping helpers.\nmigrate_julia_notes.py regenerates missing same-path .py notes from Julia source metadata.\nEvery generated note is a marimo app and records its original Julia path.\nExisting Julia changes were preserved on main; Julia files are intentionally deleted on this branch."
-  },
-  {
-    "objectID": "MIGRATION.html#coverage",
-    "href": "MIGRATION.html#coverage",
-    "title": "Julia to Python migration",
-    "section": "",
-    "text": "The source tree had 104 Julia files and now has 104 same-path Python note counterparts. Notes with an explicit Stat2Table declaration load the named .rda object from Stat2Data as a Polars DataFrame and display a head plus an EDA summary. Notes without an explicit dataset declaration are runnable migration placeholders that identify the remaining manual translation work.\nThe generator classifies explicit operations as linear regression, ANOVA, logistic/generalized linear model, time series/ARIMA, or EDA-only. Formula-bearing notes expose the Julia formula in the notebook so the Python statistical implementation can be reviewed against the source. The hand-translated UnitB-Anova/ch05/p540-rat-fat.py also includes the validated SciPy and statsmodels ANOVA result."
-  },
-  {
-    "objectID": "MIGRATION.html#environment-and-checks",
-    "href": "MIGRATION.html#environment-and-checks",
-    "title": "Julia to Python migration",
-    "section": "",
-    "text": "Use the lock5stat-env conda environment. Required Python packages include marimo, polars, pyreadr, great-tables, scipy, and statsmodels.\nUseful checks:\nconda run -n lock5stat-env python -m py_compile &lt;note.py&gt;\nconda run -n lock5stat-env marimo check &lt;note.py&gt;\nJulia sources should only be removed from a migration branch after the corresponding Python note has been checked for data, formulas, plots, and numerical results. The original sources remain available on main."
+    "text": "Rendered views of the migrated marimo notes. Each entry opens the notebook directly in the browser.\n\n/: Capacitor Voltage · Python source\n/: Ex 1.15 · Python source\n/: Ex 1.16 · Python source\n/: Ex 1.43 · Python source\n/: Example 1.7 Doctors Hospital Reg With Sqrt Transform · Python source\n/: Example 1.7 Doctors Hospital Reg · Python source\n/: Example 1.8 Mammalspices In Islands · Python source\n/: Init · Python source\n/: Log Circle Radius · Python source\n/: P106 Accord Price · Python source\n/: Studentized Longjump · Python source\n/: Utils · Python source\n/: Bookpages Price Reg · Python source\n/: Breakfast Cereal Caloric Reg · Python source\n/: Butterfly Wingsize Temp · Python source\n/: Init · Python source\n/: Metabolic Rate Log Transform Reg · Python source\n/: Utils · Python source\n/: Init · Python source\n/: P293 Nfl Offense Defense To Win · Python source\n/: P314 Boy Girl Growth Rate · Python source\n/: P325 Fish Nolinear Reg · Python source\n/: P337 Co2 Quadratic Reg · Python source\n/: P346 Max Trip Time · Python source\n/: P357 Houseny Detecting Multicollinearity · Python source\n/: P361 Hospital Meds Reg · Python source\n/: P380 Predicting Customer Spending · Python source\n/: P409 Study Brain Tissue Diff Gender · Python source\n/: P414 Handwriting Analysis · Python source\n/: Utils · Python source\n/: Init · Python source\n/: P435 · Python source\n/: P442 Firstyear Gpa · Python source\n/: P485 Secondhand Car Onehot Encode · Python source\n/: P508 Accord Price Predict · Python source\n/: Utils · Python source\n/: Init · Python source\n/: P540 Rat Fat · Python source\n/: P545 Teenpregnancy · Python source\n/: P552 Exercise Improving Baby Walking 1 · Python source\n/: P552 Exercise Improving Baby Walking 2 · Python source\n/: P556 City Commmute Time Diff · Python source\n/: P579 Leaf Diet Liflong · Python source\n/: P583 Sexual Activity Affect Life Time · Python source\n/: Utils · Python source\n/: Init · Python source\n/: Long To Wide Table · Python source\n/: P690 Diff Env Affect Lung Clean Ability · Python source\n/: P693 Sleeping Shrews · Python source\n/: P699 Franticfingers · Python source\n/: Rectangle · Python source\n/: Utils · Python source\n/: Init · Python source\n/: P778 Pig B12 · Python source\n/: P779 Hormone Affect Bird Calcium · Python source\n/: Utils · Python source\n/: Init · Python source\n/: Utils · Python source\n/: Init · Python source\n/: P1106 Losingsleeping 2 Using Tidier · Python source\n/: P1106 Losingsleeping · Python source\n/: P1106 Sleeptime Child · Python source\n/: P1111 Log Of Pi · Python source\n/: P1114 Medgpa · Python source\n/: P1116 Params Affect Shape · Python source\n/: P1118 Example9 10 · Python source\n/: P1122 Tms Treat Migraines · Python source\n/: P1122 Zapping Migraines · Python source\n/: Utils · Python source\n/: Init · Python source\n/: P1114 Medgpa · Python source\n/: P1201 Eye · Python source\n/: Utils · Python source\n/: Init · Python source\n/: Utils · Python source\n/: 1 Load Data · Python source\n/: 2 Using Dar Model · Python source\n/: 3 Open Stata Dataset · Python source\n/: 4 Statspacemodel · Python source\n/: 5 Statspacemodel Test · Python source\n/: Utils · Python source\n/: Beer Timeseries · Python source\n/: Init · Python source\n/: Locallevel Series · Python source\n/: Ma Methods · Python source\n/: P1406 Seaice · Python source\n/: P1412 Seasonal Timeseries · Python source\n/: P1421 Peace Bridge Timeseries · Python source\n/: P1431 Applestock Timeseries · Python source\n/: P1440 Peace Bridge Difference · Python source\n/: P1446 Cpi Arima Model · Python source\n/: P1494 Google Stock Prices · Python source\n/: Utils · Python source\n/: S&P Stock Timeseries · Python source\n/: Wtloss4 · Python source\n/: Parse Toml · Python source\n/: Combine Nrow · Python source\n/: Freqtable Test · Python source\n/: Get_Dataset · Python source\n/: Load_Data_From_R · Python source\n/: Metidafreq Test · Python source\n/: Two Way Table Demo 2 With R · Python source\n/: Two Way Table Demo · Python source\n/: Utils · Python source"
   }
 ]
