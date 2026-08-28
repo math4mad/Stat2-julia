@@ -13,6 +13,7 @@ The links below open the Python source for each marimo note. GitHub Pages render
 ## Start here
 
 - [Migration guide](MIGRATION.html)
+- [Browse all rendered notes](notes/index.html)
 - [Repository on GitHub](https://github.com/math4mad/Stat2-julia)
 - [Validated ANOVA example](UnitB-Anova/ch05/p540-rat-fat.py)
 
