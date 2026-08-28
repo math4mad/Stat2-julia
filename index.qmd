@@ -13,9 +13,17 @@ The links below open the Python source for each marimo note. GitHub Pages render
 ## Start here
 
 - [Migration guide](MIGRATION.html)
-- [Browse all rendered notes](notes/index.html)
+- [Browse all rendered notes](notes.html)
 - [Repository on GitHub](https://github.com/math4mad/Stat2-julia)
 - [Validated ANOVA example](UnitB-Anova/ch05/p540-rat-fat.py)
+
+## Start with a question
+
+Pick a note, read the result, then open the notebook source to experiment locally.
+
+- [Open the ANOVA note](notes/UnitB-Anova/ch05/p540-rat-fat.html)
+- [Open a linear regression note](notes/UnitA-LinearRegression/ch02/bookpages-price-reg.html)
+- [Open a time-series note](notes/UnitD-Timeseries/ch12/p1446-cpi-arima-model.html)
 
 ## Linear regression
 

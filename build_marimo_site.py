@@ -31,6 +31,21 @@ for source in note_paths():
     if result.returncode:
         failures.append((source, (result.stderr or result.stdout).strip()))
 
+index_lines = [
+    "---",
+    'title: "Notebook library"',
+    "toc: true",
+    "---",
+    "",
+    "Rendered views of the current marimo notes, organized by the original course units. Use a source link when you want to run or edit a notebook locally.",
+    "",
+]
+for source in note_paths():
+    link = (Path("notes") / source.relative_to(ROOT).with_suffix(".html")).as_posix()
+    unit = source.parts[0] if len(source.parts) > 1 else "Root utilities"
+    index_lines.append(f"- **{unit}**: [{source.stem.replace('-', ' ').title()}]({link}) · [Python source]({source.relative_to(ROOT).as_posix()})")
+(ROOT / "notes.qmd").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
+
 print(f"Exported {len(note_paths()) - len(failures)} of {len(note_paths())} marimo notes")
 for source, message in failures:
     print(f"FAILED {source}: {message.splitlines()[-1] if message else 'unknown error'}")
