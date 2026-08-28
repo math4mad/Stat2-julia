@@ -44,6 +44,55 @@ main.content {
     width: 9rem;
 }
 
+.quarto-title-block {
+    padding: 2.5rem clamp(1.25rem, 5vw, 4rem) 2.75rem;
+    border-left: 7px solid #d75b35;
+    background: linear-gradient(120deg, #275f4b 0%, #34755d 68%, #d75b35 180%);
+    color: #fffdf7;
+    box-shadow: 12px 12px 0 #e2b27b;
+}
+
+.quarto-title-block .title {
+    max-width: 760px;
+    color: #fffdf7;
+    font-size: clamp(2.8rem, 8vw, 5.8rem);
+    line-height: .95;
+}
+
+.quarto-title-block .subtitle,
+.quarto-title-block .abstract {
+    max-width: 650px;
+    color: #f6c78b;
+}
+
+main.content>p:first-of-type {
+    max-width: 680px;
+    margin-top: 3rem;
+    color: #455248;
+    font-size: 1.2rem;
+}
+
+.callout-note {
+    border-left-color: #d75b35;
+    background: #fffdf7;
+    box-shadow: 0 8px 24px #3d493b12;
+}
+
+main.content>h2 {
+    margin-top: 3rem;
+    color: #275f4b;
+    border-bottom: 2px solid #e2b27b;
+    padding-bottom: .45rem;
+}
+
+main.content a {
+    color: #893c27;
+}
+
+main.content li {
+    margin: .35rem 0;
+}
+
 .home-hero {
     margin: 0 -1rem 2.5rem;
     padding: 2.5rem clamp(1.25rem, 5vw, 4rem) 2.75rem;
