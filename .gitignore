@@ -29,7 +29,3 @@ mnist_train.csv
 Icon?
 *.jls
 catboost_info/
-
-
-/.quarto/
-**/*.quarto_ipynb
