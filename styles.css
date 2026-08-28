@@ -18,6 +18,32 @@ main.content {
     max-width: 980px;
 }
 
+.notebook-library h2 {
+    margin-top: 2.5rem;
+    color: #275f4b;
+}
+
+.notebook-library h3 {
+    margin-top: 1.5rem;
+    color: #893c27;
+    font-size: 1.15rem;
+}
+
+.notebook-library table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.notebook-library th,
+.notebook-library td {
+    padding: .55rem .75rem;
+}
+
+.notebook-library td:last-child,
+.notebook-library th:last-child {
+    width: 9rem;
+}
+
 .home-hero {
     margin: 0 -1rem 2.5rem;
     padding: 2.5rem clamp(1.25rem, 5vw, 4rem) 2.75rem;
