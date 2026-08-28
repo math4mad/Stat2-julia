@@ -357,7 +357,8 @@
             source</a></li>
         <li><strong>/</strong>: <a href="notes/UnitB-Anova/ch06/p693- Sleeping Shrews.html">P693 Sleeping Shrews</a> ·
           <a href="https://github.com/math4mad/Stat2-julia/blob/python/UnitB-Anova/ch06/p693-%20Sleeping%20Shrews.py">Python
-            source</a></li>
+            source</a>
+        </li>
         <li><strong>/</strong>: <a href="notes/UnitB-Anova/ch06/p699-FranticFingers.html">P699 Franticfingers</a> · <a
             href="https://github.com/math4mad/Stat2-julia/blob/python/UnitB-Anova/ch06/p699-FranticFingers.py">Python
             source</a></li>
@@ -400,7 +401,8 @@
         <li><strong>/</strong>: <a href="notes/UnitC-LogisticRegression/ch09/p1111-log-of-pi.html">P1111 Log Of Pi</a> ·
           <a
             href="https://github.com/math4mad/Stat2-julia/blob/python/UnitC-LogisticRegression/ch09/p1111-log-of-pi.py">Python
-            source</a></li>
+            source</a>
+        </li>
         <li><strong>/</strong>: <a href="notes/UnitC-LogisticRegression/ch09/p1114-medgpa.html">P1114 Medgpa</a> · <a
             href="https://github.com/math4mad/Stat2-julia/blob/python/UnitC-LogisticRegression/ch09/p1114-medgpa.py">Python
             source</a></li>
@@ -525,7 +527,8 @@
             href="https://github.com/math4mad/Stat2-julia/blob/python/temp/metidafreq-test.py">Python source</a></li>
         <li><strong>/</strong>: <a href="notes/temp/two-way-table-demo-2-with-r.html">Two Way Table Demo 2 With R</a> ·
           <a href="https://github.com/math4mad/Stat2-julia/blob/python/temp/two-way-table-demo-2-with-r.py">Python
-            source</a></li>
+            source</a>
+        </li>
         <li><strong>/</strong>: <a href="notes/temp/two-way-table-demo.html">Two Way Table Demo</a> · <a
             href="https://github.com/math4mad/Stat2-julia/blob/python/temp/two-way-table-demo.py">Python source</a></li>
         <li><strong>/</strong>: <a href="notes/utils.html">Utils</a> · <a
@@ -966,16 +969,21 @@
       if (!list) return;
       const parts = new Map();
       [...list.children].forEach((item) => {
-        const rendered = item.querySelector('a[href^="notes/"]');
-        const source = item.querySelector('a[href*="/blob/python/"]');
-        if (!rendered) return;
-        const path = decodeURI(rendered.getAttribute('href')).split('/').slice(1, -1);
-        const part = path[0] || 'Root utilities';
-        const chapter = path.slice(1).join(' / ') || 'Root';
-        if (!parts.has(part)) parts.set(part, new Map());
-        if (!parts.get(part).has(chapter)) parts.get(part).set(chapter, []);
-        parts.get(part).get(chapter).push({ name: rendered.textContent, href: rendered.href, source: source?.href });
+        try {
+          const rendered = item.querySelector('a[href^="notes/"]');
+          const source = item.querySelector('a[href*="/blob/python/"]');
+          if (!rendered) return;
+          const path = rendered.getAttribute('href').split('/').slice(1, -1);
+          const part = path[0] || 'Root utilities';
+          const chapter = path.slice(1).join(' / ') || 'Root';
+          if (!parts.has(part)) parts.set(part, new Map());
+          if (!parts.get(part).has(chapter)) parts.get(part).set(chapter, []);
+          parts.get(part).get(chapter).push({ name: rendered.textContent, href: rendered.href, source: source && source.href });
+        } catch (error) {
+          return;
+        }
       });
+      if (!parts.size) return;
       const container = document.createElement('div');
       container.className = 'notebook-library';
       for (const [part, chapters] of parts) {
