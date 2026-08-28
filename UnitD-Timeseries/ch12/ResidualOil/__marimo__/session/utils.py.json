@@ -1,0 +1,61 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "102939f47716d0c77f42b595ffa01638",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "48f5d49b68945a0c15086ab770231462",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "bca574a4eb3ef93e5d14197d05a8b3e8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"unitd-timeseriesch12residualoilutilsjl\">UnitD-Timeseries/ch12/ResidualOil/utils.jl</h1>\n<span class=\"paragraph\"><strong>Migration:</strong> linear regression.</span></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">No explicit Stat2Table dataset was found in the Julia source.</span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "2e7b9608f999870861abd5f92b87ca47",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Model translation remains TODO for this source note.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
