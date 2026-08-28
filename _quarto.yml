@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "**/*.py"
+    - "Stat2Data/**"
+
+website:
+  title: "Stat2 Python Notes"
+  description: "Python marimo notes migrated from Stat2 Julia examples."
+  site-url: https://math4mad.github.io/Stat2-julia/
+  repo-url: https://github.com/math4mad/Stat2-julia
+  repo-actions: [edit, issue]
+  navbar:
+    background: "#275f4b"
+    foreground: "#fffdf7"
+    left:
+      - href: index.qmd
+        text: Notes
+      - href: MIGRATION.md
+        text: Migration
+    right:
+      - icon: github
+        href: https://github.com/math4mad/Stat2-julia
+  page-footer:
+    left: "Stat2 Python migration"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-fold: true
+    smooth-scroll: true
+    link-external-newwindow: true

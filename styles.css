@@ -1,0 +1,28 @@
+/* Keep the documentation site aligned with the notebook archive's warm field-notes aesthetic. */
+:root {
+  --bs-body-font-family: Georgia, "Times New Roman", serif;
+  --bs-heading-font-family: Georgia, "Times New Roman", serif;
+  --bs-primary: #275f4b;
+  --bs-link-color: #893c27;
+  --bs-link-hover-color: #d75b35;
+}
+
+body {
+  background: linear-gradient(135deg, #eef1e8 0%, #f4f1e8 55%, #f5ded0 100%);
+}
+
+.navbar-brand, h1, h2, h3 {
+  letter-spacing: 0;
+}
+
+.quarto-title-block .quarto-title-banner {
+  background: #275f4b;
+}
+
+main.content {
+  max-width: 980px;
+}
+
+code {
+  color: #893c27;
+}
