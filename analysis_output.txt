@@ -1,0 +1,1745 @@
+--- .jl FILES BY TOP-LEVEL DIRECTORY ---
+
+[UnitA]
+  - UnitA-LinearRegression/ch01/capacitor-voltage.jl (tracked)
+  - UnitA-LinearRegression/ch01/ex-1.15.jl (tracked)
+  - UnitA-LinearRegression/ch01/ex-1.16.jl (tracked)
+  - UnitA-LinearRegression/ch01/ex-1.43.jl (tracked)
+  - UnitA-LinearRegression/ch01/example-1.7-doctors-hospital-reg-with-sqrt-transform.jl (tracked)
+  - UnitA-LinearRegression/ch01/example-1.7-doctors-hospital-reg.jl (tracked)
+  - UnitA-LinearRegression/ch01/example-1.8-mammalspices-in-islands.jl (tracked)
+  - UnitA-LinearRegression/ch01/init.jl (tracked)
+  - UnitA-LinearRegression/ch01/log-circle-radius.jl (tracked)
+  - UnitA-LinearRegression/ch01/p106-accord-price.jl (tracked)
+  - UnitA-LinearRegression/ch01/studentized-longjump.jl (tracked)
+  - UnitA-LinearRegression/ch01/utils.jl (tracked)
+  - UnitA-LinearRegression/ch02/bookpages-price-reg.jl (tracked)
+  - UnitA-LinearRegression/ch02/breakfast-cereal-caloric-reg.jl (tracked)
+  - UnitA-LinearRegression/ch02/butterfly-wingsize-temp.jl (tracked)
+  - UnitA-LinearRegression/ch02/init.jl (tracked)
+  - UnitA-LinearRegression/ch02/metabolic-rate-log-transform-reg.jl (tracked)
+  - UnitA-LinearRegression/ch02/utils.jl (tracked)
+  - UnitA-LinearRegression/ch03/init.jl (tracked)
+  - UnitA-LinearRegression/ch03/p293-nfl-offense-defense-to-win.jl (tracked)
+  - UnitA-LinearRegression/ch03/p314-boy-girl-growth-rate.jl (tracked)
+  - UnitA-LinearRegression/ch03/p325-fish-nolinear-reg.jl (tracked)
+  - UnitA-LinearRegression/ch03/p337-co2-quadratic-reg.jl (tracked)
+  - UnitA-LinearRegression/ch03/p346-max-trip-time.jl (tracked)
+  - UnitA-LinearRegression/ch03/p357-houseNY-detecting-multicollinearity.jl (tracked)
+  - UnitA-LinearRegression/ch03/p361-hospital-meds-reg.jl (tracked)
+  - UnitA-LinearRegression/ch03/p380-predicting-customer-spending.jl (tracked)
+  - UnitA-LinearRegression/ch03/p409-study-brain-tissue-diff-gender.jl (tracked)
+  - UnitA-LinearRegression/ch03/p414-handwriting-analysis.jl (tracked)
+  - UnitA-LinearRegression/ch03/utils.jl (tracked)
+  - UnitA-LinearRegression/ch04/init.jl (tracked)
+  - UnitA-LinearRegression/ch04/p435.jl (tracked)
+  - UnitA-LinearRegression/ch04/p442-firstyear-gpa.jl (tracked)
+  - UnitA-LinearRegression/ch04/p485-secondhand-car-onehot-encode.jl (tracked)
+  - UnitA-LinearRegression/ch04/p508-accord-price-predict.jl (tracked)
+  - UnitA-LinearRegression/ch04/utils.jl (tracked)
+
+[UnitB]
+  - UnitB-Anova/ch05/init.jl (tracked)
+  - UnitB-Anova/ch05/p540-rat-fat.jl (tracked)
+  - UnitB-Anova/ch05/p545-TeenPregnancy.jl (tracked)
+  - UnitB-Anova/ch05/p552-exercise-improving-baby-walking-1.jl (tracked)
+  - UnitB-Anova/ch05/p552-exercise-improving-baby-walking-2.jl (tracked)
+  - UnitB-Anova/ch05/p556-city-commmute-time-diff.jl (tracked)
+  - UnitB-Anova/ch05/p579-leaf-diet-liflong.jl (tracked)
+  - UnitB-Anova/ch05/p583-sexual-activity-affect-life-time.jl (tracked)
+  - UnitB-Anova/ch05/utils.jl (tracked)
+  - UnitB-Anova/ch06/init.jl (tracked)
+  - UnitB-Anova/ch06/long-to-wide-table.jl (tracked)
+  - UnitB-Anova/ch06/p690-diff-env-affect-lung-clean-ability.jl (tracked)
+  - UnitB-Anova/ch06/p693- Sleeping Shrews.jl (tracked)
+  - UnitB-Anova/ch06/p699-FranticFingers.jl (tracked)
+  - UnitB-Anova/ch06/rectangle.jl (tracked)
+  - UnitB-Anova/ch06/utils.jl (tracked)
+  - UnitB-Anova/ch07/init.jl (tracked)
+  - UnitB-Anova/ch07/p778-pig-b12.jl (tracked)
+  - UnitB-Anova/ch07/p779-hormone-affect-bird-calcium.jl (tracked)
+  - UnitB-Anova/ch07/utils.jl (tracked)
+  - UnitB-Anova/ch08/init.jl (tracked)
+  - UnitB-Anova/ch08/utils.jl (tracked)
+
+[UnitC]
+  - UnitC-LogisticRegression/ch09/init.jl (tracked)
+  - UnitC-LogisticRegression/ch09/p1106-losingsleeping-2-using-tidier.jl (untracked)
+  - UnitC-LogisticRegression/ch09/p1106-losingsleeping.jl (tracked)
+  - UnitC-LogisticRegression/ch09/p1106-sleeptime-child.jl (tracked)
+  - UnitC-LogisticRegression/ch09/p1111-log-of-pi.jl (untracked)
+  - UnitC-LogisticRegression/ch09/p1114-medgpa.jl (tracked)
+  - UnitC-LogisticRegression/ch09/p1116-params-affect-shape.jl (tracked)
+  - UnitC-LogisticRegression/ch09/p1118-example9-10.jl (tracked)
+  - UnitC-LogisticRegression/ch09/p1122-tms-treat-migraines.jl (tracked)
+  - UnitC-LogisticRegression/ch09/p1122-zapping-migraines.jl (tracked)
+  - UnitC-LogisticRegression/ch09/utils.jl (tracked)
+  - UnitC-LogisticRegression/ch10/init.jl (tracked)
+  - UnitC-LogisticRegression/ch10/p1114-medgpa.jl (tracked)
+  - UnitC-LogisticRegression/ch10/p1201-eye.jl (tracked)
+  - UnitC-LogisticRegression/ch10/utils.jl (tracked)
+  - UnitC-LogisticRegression/ch11/init.jl (tracked)
+  - UnitC-LogisticRegression/ch11/utils.jl (tracked)
+
+[UnitD]
+  - UnitD-Timeseries/ch12/ResidualOil/1-load-data.jl (tracked)
+  - UnitD-Timeseries/ch12/ResidualOil/2-using-DAR-model.jl (tracked)
+  - UnitD-Timeseries/ch12/ResidualOil/3-open-stata-dataset.jl (tracked)
+  - UnitD-Timeseries/ch12/ResidualOil/4-statspacemodel.jl (tracked)
+  - UnitD-Timeseries/ch12/ResidualOil/5-statspacemodel-test.jl (tracked)
+  - UnitD-Timeseries/ch12/ResidualOil/utils.jl (tracked)
+  - UnitD-Timeseries/ch12/beer-timeseries.jl (tracked)
+  - UnitD-Timeseries/ch12/init.jl (tracked)
+  - UnitD-Timeseries/ch12/locallevel-series.jl (tracked)
+  - UnitD-Timeseries/ch12/ma-methods.jl (tracked)
+  - UnitD-Timeseries/ch12/p1406-seaice.jl (tracked)
+  - UnitD-Timeseries/ch12/p1412-seasonal-timeseries.jl (tracked)
+  - UnitD-Timeseries/ch12/p1421-peace-bridge-timeseries.jl (tracked)
+  - UnitD-Timeseries/ch12/p1431-AppleStock-timeseries.jl (tracked)
+  - UnitD-Timeseries/ch12/p1440-peace-bridge-difference.jl (tracked)
+  - UnitD-Timeseries/ch12/p1446-cpi-arima-model.jl (tracked)
+  - UnitD-Timeseries/ch12/p1494-google-stock-prices.jl (tracked)
+  - UnitD-Timeseries/ch12/utils.jl (tracked)
+  - UnitD-Timeseries/s&p-stock-timeseries.jl (untracked)
+
+[ch00]
+  - ch00/wtloss4.jl (tracked)
+
+[root]
+  - parse-toml.jl (tracked)
+  - utils.jl (tracked)
+
+[temp]
+  - temp/combine-nrow.jl (tracked)
+  - temp/freqtable-test.jl (tracked)
+  - temp/get_dataset.jl (tracked)
+  - temp/load_data_from_r.jl (tracked)
+  - temp/metidafreq-test.jl (tracked)
+  - temp/two-way-table-demo-2-with-r.jl (tracked)
+  - temp/two-way-table-demo.jl (tracked)
+
+--- OTHER RELEVANT FILES ---
+
+[.py files]
+  - UnitB-Anova/ch05/p540-rat-fat.py (untracked)
+  - analyze.py (untracked)
+
+[.md files]
+  - AGENTS.md (untracked)
+  - UnitB-Anova/ch05/One-way-ANOVA-test-procedure.md (tracked)
+
+[.toml files]
+  - Manifest.toml (untracked)
+  - Project.toml (tracked)
+
+[notebook files]
+
+--- FIRST 12 NONBLANK LINES OF EACH .jl FILE ---
+
+========================================
+FILE: UnitA-LinearRegression/ch01/capacitor-voltage.jl (tracked)
+========================================
+"""
+ log transform
+"""
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM
+desc=Stat2Table(182,"Volts","电容放电电压与时间的关系,log变换电压值造成的差异",["Voltage","Time"])
+df=@pipe load_rda(desc.name)
+transform!(df, [:Voltage] => ByRow(log) =>:logVoltage)
+"""
+    plot_voltage(df::AbstractDataFrame)
+    fig[1,1]: time-voltage  scatter
+
+========================================
+FILE: UnitA-LinearRegression/ch01/ex-1.15.jl (tracked)
+========================================
+#= 
+  植物叶子宽度会随着环境温度升高而减小,探索时间与叶子宽度的线性
+  关系
+=#
+## 1. load package
+include("../../utils.jl")
+## 2. load data
+desc=Stat2Table(178,"LeafWidth","Year-LeafWidth-Linreg",["Width", "Length", "LWRatio", "Area", "Year"])
+data=@pipe load_rda(desc.name)|>select(_,["Year","Width"])
+## 3.  lin reg
+model=lm(@formula(Width ~Year), data)
+#= 
+
+========================================
+FILE: UnitA-LinearRegression/ch01/ex-1.16.jl (tracked)
+========================================
+#= 
+  有些昆虫雌性会通过发光来吸引雄性, 由此增加交配的机会, 
+  从而产下更多的卵
+=#
+## 1. load package
+include("../../utils.jl")
+## 2. load data
+desc=Stat2Table(178,"GlowWorms","",["Lantern","Eggs"])
+data=@pipe load_rda(desc.name)
+## 3. fit model 
+model=lm(@formula(Eggs ~Lantern), data)
+#= 
+
+========================================
+FILE: UnitA-LinearRegression/ch01/ex-1.43.jl (tracked)
+========================================
+#= 
+  2d,3d system which method  estimate accuracy of valume
+=#
+## 1. load package
+include("../../utils.jl")
+## 2. load data
+desc=Stat2Table(191,"Oysters","",[])
+data_2d=@pipe load_rda(desc.name)|>select(_,["TwoD","Volume"])
+data_3d=@pipe load_rda(desc.name)|>select(_,["ThreeD","Volume"])
+## 3.  lin reg 
+model_2d=lm(@formula(Volume ~TwoD), data_2d)
+#= 
+
+========================================
+FILE: UnitA-LinearRegression/ch01/example-1.7-doctors-hospital-reg-with-sqrt-transform.jl (tracked)
+========================================
+include("../../utils.jl")
+desc=Stat2Table(138,"CountyHealth","doctors-hospital-relation",["County","MDs","Hospitals","Beds"])
+df=load_rda(desc.name)
+transform!(df, [:MDs] => ByRow(sqrt) =>:sqrt_MDs)
+# 1. scatter
+#fig,ax=plot_pair_scatter(df;xlabel="Hospitals",ylabel="sqrt_MDs")
+#save("doctors-hospital-reg-with-sqrt-transform-scatter.png",fig)
+# 2.glm
+model=lm(@formula(sqrt_MDs ~Hospitals), df)
+#= 
+ sqrt_MDs ~ 1 + Hospitals
+    Coefficients:
+
+========================================
+FILE: UnitA-LinearRegression/ch01/example-1.7-doctors-hospital-reg.jl (tracked)
+========================================
+#= 
+ predict MDS with hospital
+=#
+include("../../utils.jl")
+desc=Stat2Table(138,"CountyHealth","doctors-hospital-relation",["County","MDs","Hospitals","Beds"])
+df=load_rda(desc.name)
+# 1. scatter
+fig,ax=plot_pair_scatter(df;xlabel="Hospitals",ylabel="MDs");fig
+# 2.glm
+model=lm(@formula(MDs ~Hospitals), df)
+#= 
+  MDs ~ 1 + Hospitals
+
+========================================
+FILE: UnitA-LinearRegression/ch01/example-1.8-mammalspices-in-islands.jl (tracked)
+========================================
+"""
+ data  with log transform 
+"""
+include("../../utils.jl")
+desc=Stat2Table(146,"SpeciesArea","number of spices related to islands area",["Area","Species","logArea","logSpecies"])
+df=@pipe load_rda(desc.name)
+data=select(df,desc.feature[1:2])
+log_data=select(df,desc.feature[3:4])
+data1=select(df,["logArea","Species"])
+data2=select(df,["logArea","logSpecies"])
+fig,ax=plot_pair_scatter(log_data;xlabel="logArea",ylabel="logSpecies");fig
+#save("mammalspices-in-islands-log-transform.png",fig)
+
+========================================
+FILE: UnitA-LinearRegression/ch01/init.jl (tracked)
+========================================
+include("../utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+
+========================================
+FILE: UnitA-LinearRegression/ch01/log-circle-radius.jl (tracked)
+========================================
+"""
+ data  with log transform 
+"""
+include("../utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+rad=Vector(1:3:50)
+area=rad.^2*pi
+df=DataFrame(Radius=rad,Area=area,logRadius=log.(rad),logArea=log.(area))
+function plot_radius()
+    fig=Figure(resolution=(800,300))
+    ax1=Axis(fig[1,1],xlabel="Radius",ylabel="Area")
+
+========================================
+FILE: UnitA-LinearRegression/ch01/p106-accord-price.jl (tracked)
+========================================
+include("../../utils.jl")
+desc=Stat2Table(105,"AccordPrice","describe table",["Age","Price","Mileage"])
+df=load_rda(desc.name)
+#@pt df[1:8,:]
+#= 
+    ┌───────┬─────────┬─────────┐
+    │   Age │   Price │ Mileage │
+    │ Int32 │ Float64 │ Float64 │
+    ├───────┼─────────┼─────────┤
+    │     7 │    12.0 │    74.9 │
+    │     4 │    17.9 │    53.0 │
+    │     4 │    15.7 │    79.1 │
+
+========================================
+FILE: UnitA-LinearRegression/ch01/studentized-longjump.jl (tracked)
+========================================
+"""
+ outliers  detection
+"""
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM
+desc=Stat2Table(172,"LongJumpOlympics2016","zscore-outliers",["Year","Gold"])
+df=@pipe load_rda(desc.name)
+model=lm(@formula(Gold ~Year), df)
+#= 
+    Gold ~ 1 + Year
+    Coefficients:
+
+========================================
+FILE: UnitA-LinearRegression/ch01/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+Base.@kwdef struct  Stat2Table
+    page::Int
+    name::AbstractString
+
+========================================
+FILE: UnitA-LinearRegression/ch02/bookpages-price-reg.jl (tracked)
+========================================
+include("../../utils.jl")
+desc=Stat2Table(253,"TextPrices","pages-prices-reg",[:Pages,:Price])
+data=@pipe load_rda(desc.name)
+# 1. lm fitting
+model=lm(@formula(Price~Pages), data)
+#= 
+  Price ~ 1 + Pages
+    Coefficients:
+    ──────────────────────────────────────────────────────────────────────────
+                    Coef.  Std. Error      t  Pr(>|t|)   Lower 95%  Upper 95%
+    ──────────────────────────────────────────────────────────────────────────
+    (Intercept)  -3.42231   10.4637     -0.33    0.7461  -24.8563    18.0117
+
+========================================
+FILE: UnitA-LinearRegression/ch02/breakfast-cereal-caloric-reg.jl (tracked)
+========================================
+include("../../utils.jl")
+desc=Stat2Table(253,"Cereal","sugar-calories-reg",["Cereal","Calories","Sugar","Fiber"])
+data=@pipe load_rda(desc.name)|>select(_,"Calories","Sugar")
+# 1. lm fitting
+model=lm(@formula(Calories~Sugar), data)
+#= 
+ Calories ~ 1 + Sugar
+    Coefficients:
+    ────────────────────────────────────────────────────────────────────────
+                    Coef.  Std. Error      t  Pr(>|t|)  Lower 95%  Upper 95%
+    ────────────────────────────────────────────────────────────────────────
+    (Intercept)  87.4277     5.16268   16.93    <1e-17    76.9359   97.9195
+
+========================================
+FILE: UnitA-LinearRegression/ch02/butterfly-wingsize-temp.jl (tracked)
+========================================
+include("../../utils.jl")
+desc=Stat2Table(138,"ButterfliesBc","wings-tempature-reg",["Temp","Wing","Sex","Species" ])
+df=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+data=groupby(df,:Sex)[1]
+# 1. scatter
+fig,ax=plot_pair_scatter(data;xlabel="Temp",ylabel="Wing");fig
+#lm fitting
+model=lm(@formula(Wing ~Temp), data)
+#= 
+    Wing ~ 1 + Temp
+    Coefficients:
+    ───────────────────────────────────────────────────────────────────────────
+
+========================================
+FILE: UnitA-LinearRegression/ch02/init.jl (tracked)
+========================================
+include("../../utils.jl")
+]
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+lm_model=lm(@formula(LogMrate ~ LogBodySize ),data)
+anove_table=anova(lm_model)
+========================================
+FILE: UnitA-LinearRegression/ch02/metabolic-rate-log-transform-reg.jl (tracked)
+========================================
+include("../../utils.jl")
+desc=Stat2Table(256,"MetabolicRate","ch02/metabolic-rate-log-transform-reg",[:LogBodySize,:LogMrate])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+fig,_=plot_pair_scatter(data;xlabel="LogBodySize",ylabel="LogMrate");fig
+#save("LogBodySize-LogMrate-scatter.png",fig)
+lm_model=lm(@formula(LogMrate ~ LogBodySize ),data)
+anove_table=anova(lm_model)
+#= 
+  Analysis of Variance
+Type 1 test / F test
+LogMrate ~ 1 + LogBodySize
+Table:
+
+========================================
+FILE: UnitA-LinearRegression/ch02/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+Base.@kwdef struct  Stat2Table
+    page::Int
+    name::AbstractString
+
+========================================
+FILE: UnitA-LinearRegression/ch03/init.jl (tracked)
+========================================
+include("../../utils.jl")
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p293-nfl-offense-defense-to-win.jl (tracked)
+========================================
+"""
+1. plot pair scatter
+2. lm fitting
+3. anova table
+4. plot  residals and  qqplot
+"""
+include("../../utils.jl")
+desc=Stat2Table(293,"NFLStandings2016","defense offense  which is important ",["PointsFor","PointsAgainst","WinPct"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+# 1. plot pair scatter
+#fig=plot_cor_group(data);#save("nfl-offense-defense-to-win-scatter.png",fig)
+# 2. lm fitting
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p314-boy-girl-growth-rate.jl (tracked)
+========================================
+"""
+1. plot pair scatter
+2. lm fitting
+3. anova table
+4. plot  residals and  qqplot
+"""
+## 1. load package
+include("../../utils.jl")
+## 2. load data
+desc=Stat2Table(314,"Kids198","boy-girl-growth-rate",[:Age,:Weight,:Sex])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+gdf=groupby(data,:Sex)
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p325-fish-nolinear-reg.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase
+using  GLM,AnovaGLM
+desc=Stat2Table(325,"Perch","fish-length-width-weight-predict",[:Length,:Width,:Weight])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+transform!(data, [:Length,:Width,] => ByRow(*) => :lengthxwidth)
+# 1. pairplot
+#fig=plot_cor_group(data);save("./ch03/imgs/fish-nolinear-feature-pairscatter.png",fig)
+# 2.  get cross feature
+model1=lm(@formula(Weight ~lengthxwidth),data)
+#= 
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p337-co2-quadratic-reg.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase
+using  GLM,AnovaGLM
+desc=Stat2Table(337,"CO2Germany","co2-multinomial-reg",[:Day,:CO2])
+data=@pipe load_rda(desc.name)#|>select(_,desc.feature)
+model=lm(@formula(CO2 ~Day+Day^2),data)
+time=@pipe select(data,:Day)
+yhat=predict(model,time)
+function plot_fitline()
+    fig=Figure()
+    ax=Axis(fig[1,1])
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p346-max-trip-time.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase
+using  GLM,AnovaGLM
+desc=Stat2Table(346,"FunnelDrop","maxmize time ",[:Funnel,:Tube,:Time ])
+data=@pipe load_rda(desc.name)#|>select(_,desc.feature)
+# 1. pairplot
+fig=plot_cor_group(data)#;save("./ch03/imgs/p346-max-trip-time-corplot.png",fig)
+# 2. lm fitting
+model=lm(@formula(Time~Funnel*Tube+Funnel^2+Tube^2),data)
+#= 
+  Time ~ 1 + Funnel + Tube + :(Funnel ^ 2) + :(Tube ^ 2) + Funnel & Tube
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p357-houseNY-detecting-multicollinearity.jl (tracked)
+========================================
+include("utils.jl")
+using RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables
+using  StatsBase
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(357,"HousesNY","decting multicollinearity ",["Beds","Baths", "Size","Lot","Price"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+    formula=@formula(Price~Baths+Beds+Size+Lot) #define  lm formula
+#====================================================#
+# 2.  plot pair scatter
+    #fig=plot_cor_group(data);
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p361-hospital-meds-reg.jl (tracked)
+========================================
+include("utils.jl")
+using RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(361,"CountyHealth","sqrt transform of meds ",["Hospitals","Beds","sqrtMDs"])
+    # 对医生数做平方根变换
+    data=@pipe load_rda(desc.name)|>transform!(_,[:MDs]=>ByRow(sqrt) => :sqrtMDs)|>select(_,desc.feature)
+    formula=@formula(sqrtMDs~Hospitals+Beds+Hospitals*Beds)
+# 2. pair plot
+    #fig=plot_cor_group(data)#;save("./ch03/imgs/p361-hospital-meds-pairplot.png",fig)
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p380-predicting-customer-spending.jl (tracked)
+========================================
+"""
+    Model 4: Amount ~ 1 + Freq12 + Dollar12
+    ────────────────────────────────────────────────────────────────────────────────
+    DOF  ΔDOF  Res.DOF      R²     ΔR²      Res.SS     Exp.SS   F value  Pr(>|F|)
+    ────────────────────────────────────────────────────────────────────────────────
+    4    4     1       49  0.8718  0.8692    88715.51  601684.87  360.8340    <1e-24
+    ────────────────────────────────────────────────────────────────────────────────
+"""
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p409-study-brain-tissue-diff-gender.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(409,"BrainpH","research in brain tissue ",["pH", "Sex", "Age"])
+    df=@pipe load_rda(desc.name)|>select(_,desc.feature)
+    gdf=groupby(df,:Sex)
+# 2. plot group pairplot
+     feature=["Age","pH"]
+     cats=["F","M"]
+
+========================================
+FILE: UnitA-LinearRegression/ch03/p414-handwriting-analysis.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(414,"Handwriting","Handwriting analysis",["Gender", "Survey1", "Survey2"])
+    df=@pipe load_rda(desc.name)|>select(_,desc.feature)
+    gdf=groupby(df,:Gender)[1:2]
+# 2. plot
+    feature=["Survey1", "Survey2"]
+    cats=["boy","girl"]
+
+========================================
+FILE: UnitA-LinearRegression/ch03/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitA-LinearRegression/ch04/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitA-LinearRegression/ch04/p435.jl (tracked)
+========================================
+include("utils.jl")
+using RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables
+using  StatsBase
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(435,"HousesNY","added variable plot",["Beds","Size","Price"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+# 2. fit price  with beds
+      formula1=@formula(Price~Beds) 
+      beds_model=lm(formula1,data)
+      #= 
+
+========================================
+FILE: UnitA-LinearRegression/ch04/p442-firstyear-gpa.jl (tracked)
+========================================
+include("utils.jl")
+using RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables
+using  StatsBase
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(442,"FirstYearGPA","predictors select",["HSGPA", "SATV", "SATM", "HU", "SS","GPA"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+# 2. pair plot
+    fig=plot_cor_group(data)#;save("./ch04/imgs/gpa-feature-pairplot.png",fig)
+
+========================================
+FILE: UnitA-LinearRegression/ch04/p485-secondhand-car-onehot-encode.jl (tracked)
+========================================
+include("utils.jl")
+using RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,TableTransforms,ScientificTypes
+using  StatsBase
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(485,"ThreeCars2017","one hot code",["CarType", "Age", "Price", "Mileage", "Mazda6", "Accord", "Maxima"])
+    data=@pipe load_rda(desc.name)
+
+========================================
+FILE: UnitA-LinearRegression/ch04/p508-accord-price-predict.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM
+# 1. load data
+    desc=Stat2Table(508,"AccordPrice","second hand car price predict",["Mileage","Price"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+    formula=@formula(Price ~Mileage)
+# 2. scatter data
+    #fig,ax=plot_pair_scatter(data,xlabel="Mileage",ylabel="Price");fig
+    #save("./ch04/imgs/p508-accord-used-car-mileage-price-scatter.png",fig)
+
+========================================
+FILE: UnitA-LinearRegression/ch04/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitB-Anova/ch05/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitB-Anova/ch05/p540-rat-fat.jl (tracked)
+========================================
+      include("utils.jl")
+      using  RCall
+      using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+      using  StatsBase,TableTransforms
+      using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+      desc=Stat2Table(540,"FatRats","high protein diet",["Gain","Protein","Source"])
+      data=@pipe load_rda(desc.name)
+      protein_gdf=groupby(data,:Protein)
+      hiprotein_source_gdf=groupby(protein_gdf[1],:Source)
+      cats=["Beef","Cereal","Pork"]
+      colors=[:purple,:blue,:red]
+
+========================================
+FILE: UnitB-Anova/ch05/p545-TeenPregnancy.jl (tracked)
+========================================
+#TeenPregnancy
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(545,"TeenPregnancy","state's role in civilwar affects  now teen pregnancy?",["CivilWar","Teen"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+    gdf=groupby(data,:CivilWar)
+    cats= @pipe keys(gdf).|>values(_)[1]|>String.(_)
+    colors=[:purple,:red,:green,:blue]
+
+========================================
+FILE: UnitB-Anova/ch05/p552-exercise-improving-baby-walking-1.jl (tracked)
+========================================
+"""
+实验分为 4 个组:
+1. 结合训练方法, 并且每周询问进展
+2. 没有使用训练方法, 但是鼓励每天让婴儿练习 15 分钟,并且每周询问进展
+3. 没有训练, 也没有鼓励练习, 但是每周询问进展
+4. 没有任何措施, 只询问最终开始走路的时间点
+results:
+    Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    p-value:                     0.1039
+    方法之间没有差异
+"""
+
+========================================
+FILE: UnitB-Anova/ch05/p552-exercise-improving-baby-walking-2.jl (tracked)
+========================================
+"""
+实验分为 4 个组:
+1. 结合训练方法, 并且每周询问进展
+2. 没有使用训练方法, 但是鼓励每天让婴儿练习 15 分钟,并且每周询问进展
+3. 没有训练, 也没有鼓励练习, 但是每周询问进展
+4. 没有任何措施, 只询问最终开始走路的时间点
+以 LM 的方法实现 anova
+以 LM 方法看anova,方差分析可以表示为:总均值+处理效应+残差
+"""
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+
+========================================
+FILE: UnitB-Anova/ch05/p556-city-commmute-time-diff.jl (tracked)
+========================================
+"""
+ANOVA 的假设前提之一是参与试验的组件方差相等所以在执行 ANOVA 假设检验之前需要对方差齐性先做出检验
+方法是 LeveneTest  
+LeveneTest  检验为:
+  h₀: 各组方差相等
+  hₐ: 组件方差不等 
+"""
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+
+========================================
+FILE: UnitB-Anova/ch05/p579-leaf-diet-liflong.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(579,"Leafhoppers","diet affect life long of insect?",["Diet","Days"])
+    data=@pipe load_rda(desc.name)
+    @pt first(data,5)
+    #= 
+        ┌───────┬───────────────────────────────────────────────────┬─────────┐
+        │  Dish │                                              Diet │    Days │
+
+========================================
+FILE: UnitB-Anova/ch05/p583-sexual-activity-affect-life-time.jl (tracked)
+========================================
+"""
+125 只果蝇被随机分配到有不同雌性果蝇的房间:
+1.  一只怀孕的雌性果蝇
+2.  8只 雌性果蝇
+3.  一只没有产过卵的雌性
+4.  8 只没有产过卵的雌性
+"""
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+
+========================================
+FILE: UnitB-Anova/ch05/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitB-Anova/ch06/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitB-Anova/ch06/long-to-wide-table.jl (tracked)
+========================================
+"""
+ long dataframe  => wide dataframe
+Row │ ID     Rate   Subj  Drug 
+     │ Int32  Int32  Cat…  Cat… 
+─────┼──────────────────────────
+   1 │     1     11  A     Pl
+   2 │     2     56  B     Pl
+   3 │     3     15  C     Pl
+   4 │     4      6  D     Pl
+   5 │     5     26  A     Ca
+   6 │     6     83  B     Ca
+   7 │     7     34  C     Ca
+
+========================================
+FILE: UnitB-Anova/ch06/p690-diff-env-affect-lung-clean-ability.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(690,"RadioactiveTwins","living on city or rural ,lung clean ability diff?",["TwinPair", "Env", "Rate"])
+    data=@pipe load_rda(desc.name)#|>select(_,desc.feature)
+    gdf=groupby(data,:Env)
+# 2. onw-way anova 
+   OneWayANOVATest(gdf[1].Rate,gdf[2].Rate)
+   #= 
+
+========================================
+FILE: UnitB-Anova/ch06/p693- Sleeping Shrews.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(693,"SleepingShrews","sleep status",["Shrew","Phase","Rate"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+    gdf=groupby(data,:Phase)
+# 2. anova
+    OneWayANOVATest(gdf[1][:,:Rate],gdf[2][:,:Rate],gdf[3][:,:Rate])  
+    #= 
+
+========================================
+FILE: UnitB-Anova/ch06/p699-FranticFingers.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1.  load data
+    desc=Stat2Table(699,"FranticFingers","drug affect response ability",["ID", "Rate", "Subj", "Drug"])
+    data=@pipe load_rda(desc.name)
+    gdf=groupby(data,:Subj)
+# 2.  plot  side-by-side plot
+    ls=[:dot,:dash,:dashdot,:solid]
+    colors=[:purple,:blue,:red,:green]
+
+========================================
+FILE: UnitB-Anova/ch06/rectangle.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1.  load data
+    desc=Stat2Table(699,"Rectangles","",["Case", "Width", "Length", "Area", "logArea"])
+    data=@pipe load_rda(desc.name)
+
+========================================
+FILE: UnitB-Anova/ch06/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitB-Anova/ch07/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitB-Anova/ch07/p778-pig-b12.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query,FreqTables
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests,AnovaMixedModels
+# 1.  load data
+    desc=Stat2Table(778,"PigFeed","antibotics affect pig gain weight by b12",["WgtGain","Antibiotic","B12"])
+    data=@pipe load_rda(desc.name)
+#2. construct contingency table
+    gdf=groupby(data,["Antibiotic","B12"])
+    M=@pipe [mean(df[:,:WgtGain]) for df in gdf].|>round.(_,digits=2)|>reshape(_,(2,2))
+     c1=["b12(0mg)","b12(5mg)","Diff"]
+
+========================================
+FILE: UnitB-Anova/ch07/p779-hormone-affect-bird-calcium.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query,FreqTables
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1.  load data
+    desc=Stat2Table(779,"BirdCalcium","hormone affect bird calciym",["Bird", "Sex", "Hormone", "Group", "Ca"])
+    df=load_rda(desc.name)
+    #= 
+          Row │ Bird   Sex   Hormone  Group  Ca      
+              │ Int32  Cat…  Cat…     Cat…   Float64 
+         ─────┼──────────────────────────────────────
+
+========================================
+FILE: UnitB-Anova/ch07/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitB-Anova/ch08/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitB-Anova/ch08/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1106-losingsleeping-2-using-tidier.jl (untracked)
+========================================
+"""
+数据显示方式变换
+将
+Row │ Person  Age    Outcome 
+     │ Int32   Int32  Int32   
+─────┼────────────────────────
+   1 │      1     14        1
+   2 │      2     18        0
+   3 │      3     17        0
+   4 │      4     18        1
+   5 │      5     16        0
+   6 │      6     15        0
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1106-losingsleeping.jl (tracked)
+========================================
+"""
+数据显示方式变换
+将
+Row │ Person  Age    Outcome 
+     │ Int32   Int32  Int32   
+─────┼────────────────────────
+   1 │      1     14        1
+   2 │      2     18        0
+   3 │      3     17        0
+   4 │      4     18        1
+   5 │      5     16        0
+   6 │      6     15        0
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1106-sleeptime-child.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1106,"LosingSleep","children sleep status",["Age","Outcome"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)|>Float64.(_)
+    gdf=groupby(data,:Age)
+    cats=keys(gdf).|>values.|>d->d[1]
+    m7=[]
+    l7=[]
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1111-log-of-pi.jl (untracked)
+========================================
+include("utils.jl")
+using  DataFrames,Pipe,Tidier
+using  StatsBase,TableTransforms,FreqTables
+pis=[1//20,1//10,1//5,1//4,1//2,3//4,4//5,9//10,19//20]
+data=DataFrame(π=pis)
+df=@chain data begin
+   @mutate(dec=float(π))
+   @mutate(odds=π/(1-π))
+   @mutate(log_ods=log(odds))
+end
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1114-medgpa.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1106,"MedGPA","MedSchool acceptance",["Accept","Acceptance","GPA","MCAT"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+# 2. lm and logistic reg
+    #model=glm(@formula(Acceptance~GPA+MCAT), data, Binomial(), ProbitLink())
+    model1=lm(@formula(MCAT~GPA), data)
+    model2=glm(@formula(Acceptance~GPA), data, Binomial(), ProbitLink())
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1116-params-affect-shape.jl (tracked)
+========================================
+using GLMakie,Statistics,StatsFuns
+xs1=range(0,4.5,100)
+xs2=range(0,20,100)
+function plot_res()
+    dotstyles=[:dot,:solid,:dashdot]
+    fig=Figure(resolution=(900,450))
+    ax1=Axis(fig[1,1],title=L"change \beta_0,with \beta_1=5.5")
+    ax2=Axis(fig[1,2],title=L"change \beta_1,with \beta_0=4")
+    for (β₀,dotstyle) in zip([-17,-19,-21],dotstyles)
+        expr(x)=logistic(5.5*x+β₀)
+        lines!(ax1,xs1,expr.(xs1);linestyle=dotstyle,linewidth=3,label="β₀=$(β₀)")
+    end
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1118-example9-10.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1106,"MedGPA","MedSchool acceptance",["Accept","Acceptance","GPA","MCAT"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)
+# 2. lm and logistic  reg
+    #model=glm(@formula(Acceptance~GPA+MCAT), data, Binomial(), ProbitLink())
+    model1=lm(@formula(MCAT~GPA), data)
+    model2=glm(@formula(Acceptance~GPA), data, Binomial(), ProbitLink())
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1122-tms-treat-migraines.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1122,"Migraines","tms teat Migraines",["Accept","Acceptance","GPA","MCAT"])
+    data=@pipe load_rda(desc.name)
+    #= 
+        Row │ Group    Yes    No     Trials 
+            │ Cat…     Int32  Int32  Int32  
+       ─────┼───────────────────────────────
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/p1122-zapping-migraines.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1122,"Migraines","tms treatment of migraines",["Group", "Yes", "No", "Trials"])
+    data=@pipe load_rda(desc.name)
+    first(data,10)
+
+========================================
+FILE: UnitC-LogisticRegression/ch09/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitC-LogisticRegression/ch10/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitC-LogisticRegression/ch10/p1114-medgpa.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1114,"MedGPA","applicants ",[])
+    data=@pipe load_rda(desc.name)
+    first(data,10)
+========================================
+FILE: UnitC-LogisticRegression/ch10/p1201-eye.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1201,"Eyes","sexual attitude",["DilateDiff", "Sex", "Gay", "SexMale"])
+    data=@pipe load_rda(desc.name)
+    @pt first(data,5)
+    gdf=groupby(data,:Gay)
+    #= 
+        ┌────────────┬───────────────────────────────────────────────────┬───────┬─────────┐
+
+========================================
+FILE: UnitC-LogisticRegression/ch10/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitC-LogisticRegression/ch11/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitC-LogisticRegression/ch11/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitD-Timeseries/ch12/ResidualOil/1-load-data.jl (tracked)
+========================================
+include("utils.jl")
+import  TimeSeries:lag
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM,TimeSeries
+#step1  load data
+        desc=Stat2Table(1463,"ResidualOil","glimpse dataset",["Year", "Qtr", "t", "Oil", "LogOil"])
+        data=@pipe load_rda(desc.name)#get_df_feature(data)
+        #@pt  first(data,3)
+        #= 
+            ┌───────┬───────┬───────┬─────────┬─────────┐
+            │  Year │   Qtr │     t │     Oil │  LogOil │
+            │ Int32 │ Int32 │ Int32 │ Float64 │ Float64 │
+
+========================================
+FILE: UnitD-Timeseries/ch12/ResidualOil/2-using-DAR-model.jl (tracked)
+========================================
+"""
+ StateSpaceModels.jl   DAR 模型
+"""
+include("utils.jl")
+import  StateSpaceModels:fit!
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM,TimeSeries,StateSpaceModels
+#step1  load data
+        desc=Stat2Table(1463,"ResidualOil","glimpse dataset",["Year", "Qtr", "t", "Oil", "LogOil"])
+        data=@pipe load_rda(desc.name)
+#step2  DAR  model
+        # Oil=data[:,:Oil]
+
+========================================
+FILE: UnitD-Timeseries/ch12/ResidualOil/3-open-stata-dataset.jl (tracked)
+========================================
+using DataFrames,CSV,StatFiles,TimeSeries
+      str="./ch12/ResidualOil/air2.dta"
+# 1,  load  dataframe
+      #df = DataFrame(load(str))
+# 2. loda to timeseries
+     #ts = TimeArray(load(str))
+========================================
+FILE: UnitD-Timeseries/ch12/ResidualOil/4-statspacemodel.jl (tracked)
+========================================
+include("utils.jl")
+import  TimeSeries:lag
+using  DataFrames,Pipe,PrettyTables,StatsBase,GLMakie
+using  TimeSeries,StateSpaceModels
+plotly()
+#step1  load data
+        desc=Stat2Table(1463,"ResidualOil","glimpse dataset",["Year", "Qtr", "t", "Oil", "LogOil"])
+        data=@pipe load_rda(desc.name)
+        ts=data[:,:t]
+        logOil=data[:,:LogOil]
+#step2  define statespacemodel  plot funciton 
+        """
+
+========================================
+FILE: UnitD-Timeseries/ch12/ResidualOil/5-statspacemodel-test.jl (tracked)
+========================================
+using CSV, DataFrames,Plots
+plotly()
+using StateSpaceModels
+air_passengers = CSV.File(StateSpaceModels.AIR_PASSENGERS) |> DataFrame
+log_air_passengers = log.(air_passengers.passengers)
+model = SARIMA(log_air_passengers; order = (0, 1, 1), seasonal_order = (0, 1, 1, 12))
+fit!(model)
+forec = forecast(model, 12)
+plot(model, forec; legend = :topleft)
+
+========================================
+FILE: UnitD-Timeseries/ch12/ResidualOil/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"构建 Stat2  Struct"
+Base.@kwdef struct  Stat2Table
+
+========================================
+FILE: UnitD-Timeseries/ch12/beer-timeseries.jl (tracked)
+========================================
+include("utils.jl")
+    using  RCall
+    using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+    using  StatsBase,TableTransforms
+    using  GLM,AnovaGLM,HypothesisTests
+#1.   load data
+    desc=Stat2Table(000,"ausbeer","https://online.stat.psu.edu/stat510/lesson/1/1.1",[:value])
+    data=@pipe load_rda(desc.name)
+#2.   plot series
+    #lines(data)
+#    plot quarto autocor
+     stem(autocor(data))
+========================================
+FILE: UnitD-Timeseries/ch12/init.jl (tracked)
+========================================
+include("utils.jl")
+using  GLMakie,DataFrames,Pipe,PrettyTables,StatsBase
+using GLM,AnovaGLM
+desc=Stat2Table(138,"CountyHealth","hospital-predict-doctors-number",["County","MDs","Hospitals","Beds"])
+data=@pipe load_rda(desc.name)|>select(_,desc.feature[1:3])
+@pt  data[1:5,:]
+#= 
+    ┌───────────────────────────────────────────────────┬───────┬───────────┐
+    │                                            County │   MDs │ Hospitals │
+    │ CategoricalArrays.CategoricalValue{String, UInt8} │ Int32 │     Int32 │
+    ├───────────────────────────────────────────────────┼───────┼───────────┤
+    │              Bay, FL                              │   351 │         3 │
+
+========================================
+FILE: UnitD-Timeseries/ch12/locallevel-series.jl (tracked)
+========================================
+"""
+ aus_export 数据来源于 R 软件包
+"""
+import StateSpaceModels:fit!
+using  RCall,DataFrames,CSV,StateSpaceModels,Pipe
+include("utils.jl")
+str="aus_export"
+data=@pipe load_data(str)|>filter(row -> row.Country == "Australia", _)|>select(_,["Year","Exports"])
+ts=data[:,:Year]
+ys=data[:,:Exports]
+model=LocalLevel(ys)
+fit!(model)
+
+========================================
+FILE: UnitD-Timeseries/ch12/ma-methods.jl (tracked)
+========================================
+"""
+使用 Timeseries.jl 方法处理 moving 列
+"""
+using DataFrames,CSV,StateSpaceModels,Pipe,TimeSeries,DataFramesMeta
+using Dates,StatsBase
+include("utils.jl")
+# 1.  load data-> TimeArray
+    str="aus_export"
+    df=@pipe load_data(str)|>filter(row -> row.Country == "Australia", _)|>select(_,["Year","Exports"])
+    @transform!(df, :time =Date.(:Year))
+    ts=TimeArray(df, timestamp = :time)
+#2. Moving Average  
+
+========================================
+FILE: UnitD-Timeseries/ch12/p1406-seaice.jl (tracked)
+========================================
+include("utils.jl")
+    using  RCall
+    using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+    using  StatsBase,TableTransforms
+    using  GLM,AnovaGLM,HypothesisTests
+#1.   load data
+    desc=Stat2Table(1406,"SeaIce","sea ice  time series",["Year", "Extent", "Area", "t"])
+    data=@pipe load_rda(desc.name)
+    display(first(data,10))
+#2.   plot  time-extend series
+    fig,ax,plt=scatterlines(data[:,:Year],data[:,:Extent];marker_style...)
+    #save("./ch12/imgs/p1406-seaice-timeseries.png",fig)
+
+========================================
+FILE: UnitD-Timeseries/ch12/p1412-seasonal-timeseries.jl (tracked)
+========================================
+#init  
+    include("utils.jl")
+    using  RCall
+    using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+    using  StatsBase,TableTransforms
+    using  GLM,AnovaGLM,HypothesisTests
+#1.    load data
+        desc=Stat2Table(1412,"PeaceBridge2012","seasonal time series",["Year", "Month", "Traffic", "t"])
+        data=@pipe load_rda(desc.name)
+        ts=tspan=data[:,:t]
+#2.    plot time series
+        fig1,ax1,plt1=scatterlines(data[:,:t],data[:,:Traffic];marker_style...,linewidth=4)
+
+========================================
+FILE: UnitD-Timeseries/ch12/p1421-peace-bridge-timeseries.jl (tracked)
+========================================
+#init  
+include("utils.jl")
+        using  RCall
+        using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+        using  StatsBase,TableTransforms
+        using  GLM,AnovaGLM,HypothesisTests
+#1. load data
+        desc=Stat2Table(1421,"PeaceBridge2003","longer seasonal time series",["Year", "Month", "Traffic", "t"])
+        data=@pipe load_rda(desc.name)
+        ts=tspan=data[:,:t]
+        traffic=data[:,:Traffic]
+#2. plot time series
+
+========================================
+FILE: UnitD-Timeseries/ch12/p1431-AppleStock-timeseries.jl (tracked)
+========================================
+#init  
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+using  StatsBase,TableTransforms,Random,TimeSeries,Dates
+using  GLM,AnovaGLM,HypothesisTests,Distributions
+Random.seed!(34343)
+#1. load data
+        desc=Stat2Table(1431,"AppleStock","stock time series",["Date", "Price", "Change", "Volume"])
+        data=@pipe load_rda(desc.name)
+#2. plot timeseries,randon walk
+    d=Normal(0,1.5)
+
+========================================
+FILE: UnitD-Timeseries/ch12/p1440-peace-bridge-difference.jl (tracked)
+========================================
+#init  
+    include("utils.jl")
+    import TimeSeries:lag,diff
+    using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta
+    using  StatsBase,TimeSeries
+#1. load csv->dataframe->timearray
+    desc=Stat2Table(1440,"PeaceBridge2003","longer seasonal time series",["Year", "Month", "Traffic", "t"])
+    data=@pipe load_rda(desc.name)
+    @transform!(data, :time=Date.(:Year,:Month))
+    ts2=TimeArray(data, timestamp = :time)
+#2. diff operation
+    lag1=1
+
+========================================
+FILE: UnitD-Timeseries/ch12/p1446-cpi-arima-model.jl (tracked)
+========================================
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+using  StatsBase,TableTransforms,Random,TimeSeries,Dates
+using  GLM,AnovaGLM,HypothesisTests,Distributions
+Random.seed!(34343)
+#1. load data
+        desc=Stat2Table(1446,"Inflation","arima model",["Month", "Year", "CPI", "CPIPctDiff", "t"])
+        data=@pipe load_rda(desc.name)|>@transform!(_, :time=Date.(:Year,:Month))|>select(_,[:time,:CPI])
+        ts=TimeArray(data, timestamp = :time)
+        #= 
+            ┌───────┬───────┬─────────┬────────────┬───────┐
+
+========================================
+FILE: UnitD-Timeseries/ch12/p1494-google-stock-prices.jl (tracked)
+========================================
+#init  
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+using  StatsBase,TableTransforms,Random,TimeSeries,Dates
+using  GLM,AnovaGLM,HypothesisTests,Distributions
+Random.seed!(34343)
+#1. load data
+        desc=Stat2Table(1494,"TechStocks","googld stock time series",["Date", "AAPL", "GOOG", "MSFT", "t"])
+        data=@pipe load_rda(desc.name)|>select(_,[:Date,:GOOG,:t])
+#2.  construct ts
+    change(d)=@pipe d|>String|>split(_,"/")|>DateTime("$(_[3])-$(_[1])-$(_[2])", DateFormat("y-m-d"))
+
+========================================
+FILE: UnitD-Timeseries/ch12/utils.jl (tracked)
+========================================
+using RData,DataFrames, CodecBzip2,Pipe,GLM,GLMakie,PrettyTables
+using Combinatorics,ColorSchemes,RCall
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
+end
+"""
+    load_data(str::String)
+
+========================================
+FILE: UnitD-Timeseries/s&p-stock-timeseries.jl (untracked)
+========================================
+"""
+"""
+import DataFrames:rename!
+import StateSpaceModels:fit!,DAR
+using  RCall,DataFrames,CSV,StateSpaceModels,Pipe
+using  TimeSeries,Dates
+include("./ch12/utils.jl")
+df=CSV.File("UnitD-Timeseries/sp500_index.csv")|>DataFrame
+rename!(df,"S&P500"=>:sp500)
+# change(d)=@pipe d|>String|>DateTime(_, DateFormat("y-m-d"))
+# transform!(df, ["Date"] => ByRow(change) =>:Date)
+dates =df.Date
+
+========================================
+FILE: ch00/wtloss4.jl (tracked)
+========================================
+include("../utils.jl")
+desc=Stat2Table(73,"WeightLossIncentive4","finanicial incentives for weightloss",[])
+df=load_rda(desc.name)
+gdf=groupby(df,:Group)
+cats = @pipe keys(gdf) .|> values(_)[1]
+group_data=[d.WeightLoss for d in gdf]
+## 2. summary  
+summary_tabele=summary_df(gdf,:WeightLoss)
+@pt  summary_tabele
+#= 
+┌───────────────────────────────────────────────────┬───────┬─────────┬─────────┐
+│                                             Group │     n │    Mean │  Stddev │
+
+========================================
+FILE: parse-toml.jl (tracked)
+========================================
+using TOML,Pkg
+res=TOML.parsefile("Project.toml")
+deps=res["deps"]
+#ky=keys(deps)
+arr=[]
+for k in  keys(deps)
+    push!(arr, k)
+end
+arr
+Pkg.add(arr)
+
+========================================
+FILE: temp/combine-nrow.jl (tracked)
+========================================
+"""
+dataframe   combine nrow  
+combine(gd, :c => sum, nrow, ungroup=false)
+"""
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,Query
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1. load data
+    desc=Stat2Table(1106,"LosingSleep","children sleep status",["Age","Outcome"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)|>Float64.(_)
+
+========================================
+FILE: temp/freqtable-test.jl (tracked)
+========================================
+"""
+使用 freqtable  聚合频数数据
+"""
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+# 1.  load data
+    desc=Stat2Table(1106,"LosingSleep","children sleep status",["Age","Outcome"])
+    data=@pipe load_rda(desc.name)|>select(_,desc.feature)|>Float64.(_)
+    res=freqtable(data, :Age, :Outcome)
+
+========================================
+FILE: temp/get_dataset.jl (tracked)
+========================================
+"""
+snippetslab://snippet/6F3A93ED-3E90-4D70-83FE-7B23C5C7D936
+Introduction to Modern Statistics, First Edition by Mine Çetinkaya-Rundel and Johanna Hardin. 
+https://openintro-ims.netlify.app
+软件包  "openintro"  获得CSV 文件
+1. 获取文件列表字符串
+2. 获得 dataframe, 将字符串转换为 Symbol 作为 R 的参数  "Str"=>:Str
+3. 转 csv,保存
+"""
+using CSV,DataFrames,RCall
+"get list from R"
+function get_list()::Vector{AbstractString}
+
+========================================
+FILE: temp/load_data_from_r.jl (tracked)
+========================================
+using RCall, DataFrames,CSV 
+function load_df_R(name::AbstractString)::AbstractDataFrame
+    @rput name
+    R"""
+    library("Stat2Data")
+    df<-data.frame(name)
+    """
+    df=@rget df
+    return df
+end
+df=load_df_R("MetroHealth83")
+
+========================================
+FILE: temp/metidafreq-test.jl (tracked)
+========================================
+"""
+test metidafreq.jl
+"""
+include("utils.jl")
+using  RCall
+using  GLMakie,DataFrames,Pipe,PrettyTables,DataFramesMeta,FreqTables
+using  StatsBase,TableTransforms
+using  GLM,AnovaGLM,HypothesisTests
+using MetidaFreq,CSV
+# 1.  load data
+    #desc=Stat2Table(1106,"LosingSleep","children sleep status",["Age","Outcome"])
+    #data=@pipe load_rda(desc.name)|>select(_,desc.feature)|>Float64.(_)
+
+========================================
+FILE: temp/two-way-table-demo-2-with-r.jl (tracked)
+========================================
+"""
+@ref https://www.statology.org/two-way-table-in-r/
+使用 PrettyTable 实现表格 hightlight 显示
+"""
+using DataFrames,PrettyTables,Pipe,RCall
+R"""
+    df <- data.frame(sport=c('Base', 'Base', 'Bask', 'Foot', 'Foot'),
+                    gender=c('Male', 'Female', 'Male', 'Male', 'Female'))
+    #view data frame 
+    df
+    #create two way table from data frame
+    data <- table(df$gender, df$sport)
+
+========================================
+FILE: temp/two-way-table-demo.jl (tracked)
+========================================
+"""
+@ref https://www.statology.org/two-way-table-in-r/
+使用 PrettyTable 实现表格 hightlight 显示
+"""
+using DataFrames,PrettyTables,Pipe
+data=@pipe ["Male" 13   15  20 ; "Femle" 23 16 13]
+df=DataFrame(data,[:Gender,:BaseBall,:BasketBall,:FootBall])
+transform!(df,[:BaseBall,:BasketBall,:FootBall] => ByRow(+) => :Sum)
+#= total=combine(df,  :BaseBall=> sum => :BaseBall,:BasketBall=> sum => :BasketBall,:FootBall=> sum => :FootBall,
+:BaseBall,:BasketBall,:FootBall=>(sum)=>:Sum  
+)
+insertcols!(total,1,:Gender=>["Total"])
+
+========================================
+FILE: utils.jl (tracked)
+========================================
+using  CodecBzip2,Pipe
+using  RData,DataFrames,PrettyTables
+using  UnicodePlots,GLMakie
+using  HypothesisTests,StatsBase
+using  GLM,AnovaGLM,AnovaBase
+"""
+    load_rda(str::AbstractString)
+    加载 Stat2 rda  dataset
+"""
+function load_rda(str::AbstractString)
+ df=load("./Stat2Data/$str.rda")
+ return df["$str"]
