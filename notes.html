@@ -680,4 +680,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const library = document.querySelector('main.content ul');
+  if (!library) return;
+  const groups = new Map();
+  [...library.children].forEach((item) => {
+    const link = item.querySelector('a[href^="notes/"]');
+    if (!link) return;
+    const parts = decodeURI(link.getAttribute('href')).split('/').slice(1, -1);
+    const category = parts.length ? parts.join(' / ') : 'Root utilities';
+    if (!groups.has(category)) groups.set(category, []);
+    groups.get(category).push(item);
+  });
+  library.replaceChildren();
+  for (const [category, items] of groups) {
+    const heading = document.createElement('h2');
+    heading.textContent = category;
+    library.append(heading);
+    items.forEach((item) => {
+      const label = item.querySelector('strong');
+      if (label) label.textContent = category;
+      library.append(item);
+    });
+  }
+});
+</script>
 </body></html>
