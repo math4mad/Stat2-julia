@@ -1,0 +1,70 @@
+---
+title: "Parse Toml"
+description: "Browser view of the parse-toml.py marimo note."
+---
+
+[Open the Python source](parse-toml.py) · [View on GitHub](https://github.com/math4mad/Stat2-julia/blob/gh-pages/parse-toml.py)
+
+This page presents the marimo note as a browser-readable Quarto document. Run the `.py` file locally with marimo to execute its cells.
+
+```{.python}
+import marimo
+
+__generated_with = "0.17.2"
+
+app = marimo.App()
+
+
+@app.cell
+def _():
+    import sys
+    from pathlib import Path
+
+    import marimo as mo
+
+    sys.path.insert(0, str(Path(__file__).resolve().parents[0]))
+    from stat2_python import eda_table, load_rda
+
+    return Path, eda_table, load_rda, mo
+
+
+@app.cell
+def _(Path, eda_table, load_rda, mo):
+    dataset_name = None
+    data_dir = Path(__file__).resolve().parents[0] / "Stat2Data"
+    if dataset_name is None:
+        data = None
+        eda = None
+        message = "No explicit Stat2Table dataset was found in the Julia source."
+    else:
+        data = load_rda(dataset_name, data_dir)
+        eda = eda_table(data)
+        message = None
+    return data, dataset_name, eda, message
+
+
+@app.cell
+def _(data, dataset_name, eda, message, mo):
+    if data is None:
+        _output = mo.vstack([mo.md("# parse-toml.jl\n\n**Migration:** EDA only."), mo.md(message)])
+    else:
+        _output = mo.vstack([mo.md("# parse-toml.jl\n\n**Migration:** EDA only."), mo.md(f"Dataset: `{dataset_name}`"), data.head(), eda])
+    _output
+    return
+
+
+@app.cell
+def _(data, mo):
+    model_formula = None
+    if data is None or model_formula is None:
+        _output = mo.md("Model translation remains TODO for this source note.")
+    else:
+        _output = mo.md(f"Detected Julia formula: `{model_formula}`. Classified as **EDA only**; translate with statsmodels or scipy.")
+    _output
+    return
+
+
+if __name__ == "__main__":
+    app.run()
+
+```

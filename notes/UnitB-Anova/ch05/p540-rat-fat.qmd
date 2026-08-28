@@ -1,0 +1,90 @@
+---
+title: "P540 Rat Fat"
+description: "Browser view of the UnitB-Anova/ch05/p540-rat-fat.py marimo note."
+---
+
+[Open the Python source](../../UnitB-Anova/ch05/p540-rat-fat.py) · [View on GitHub](https://github.com/math4mad/Stat2-julia/blob/gh-pages/UnitB-Anova/ch05/p540-rat-fat.py)
+
+This page presents the marimo note as a browser-readable Quarto document. Run the `.py` file locally with marimo to execute its cells.
+
+```{.python}
+import marimo
+
+__generated_with = "0.17.2"
+
+app = marimo.App()
+
+
+@app.cell
+def _():
+    from pathlib import Path
+
+    import marimo as mo
+    import polars as pl
+    import pyreadr
+    import statsmodels.api as sm
+    from great_tables import GT
+    from scipy.stats import f_oneway
+    from statsmodels.formula.api import ols
+
+    return GT, Path, f_oneway, mo, ols, pl, pyreadr, sm
+
+
+@app.cell
+def _(Path, pl, pyreadr):
+    data_path = Path(__file__).resolve().parents[2] / "Stat2Data" / "FatRats.rda"
+    rda_objects = pyreadr.read_r(str(data_path))
+    data = pl.from_pandas(rda_objects["FatRats"])
+
+    data.head()
+    return data, data_path
+
+
+@app.cell
+def _(data, pl):
+    high_protein = data.filter(pl.col("Protein") == "Hi")
+
+    summary = (
+        high_protein.group_by("Source")
+        .agg(
+            pl.len().alias("n"),
+            pl.col("Gain").mean().alias("mean_gain"),
+            pl.col("Gain").std().alias("sd_gain"),
+        )
+        .sort("Source")
+    )
+    summary
+    return high_protein, summary
+
+
+@app.cell
+def _(GT, summary):
+    GT(summary.to_pandas())
+    return
+
+
+@app.cell
+def _(f_oneway, high_protein, mo):
+    groups = [
+        high_protein.filter(high_protein["Source"] == source)["Gain"].to_numpy()
+        for source in ("Beef", "Cereal", "Pork")
+    ]
+    test = f_oneway(*groups)
+    mo.md(
+        f"**One-way ANOVA:** $F = {test.statistic:.4f}$, "
+        f"$p = {test.pvalue:.4f}$"
+    )
+    return groups, test
+
+
+@app.cell
+def _(high_protein, ols, sm):
+    model = ols("Gain ~ C(Source)", data=high_protein.to_pandas()).fit()
+    anova_table = sm.stats.anova_lm(model, typ=1)
+    anova_table
+    return anova_table, model
+
+
+if __name__ == "__main__":
+    app.run()
+```
